@@ -1,0 +1,157 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    background-color: #268bd2;
+    width: auto;
+}
+
+.burger {
+    --opacity: 1;
+    --rotate: 0;
+    --translate: 0.5rem;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    border: none;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+
+    &:hover {
+        background-color: #ddd;
+    }
+    &.is-active {
+        background-color: #268bd2;
+        --opacity: 0;
+        --rotate: 135deg;
+        --translate: 0;
+    }
+
+    span {
+        display: block;
+        width: 70%;
+        height: 2.5px;
+        background-color: #000;
+        grid-area: 1 / 1 / -1 / -1;
+        transition: opacity 0.4s ease, rotate 0.4s ease, translate 0.4s ease;
+
+        &:nth-child(1) {
+            opacity: var(--opacity);
+        }
+        &:nth-child(2) {
+            translate: 0 calc(var(--translate) * -1);
+            rotate: var(--rotate);
+        }
+        &:nth-child(3) {
+            translate: 0 var(--translate);
+            rotate: calc(var(--rotate) * -1);
+        }
+    }
+}
+
+.menu {
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 80px;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    background-color: #268bd2;
+    z-index: 100;
+    transition: opacity 0.4s ease;
+    transform: translateX(100%);
+
+    &.is-active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(0);
+    }
+
+    a {
+        width: 300px;
+        text-align: right;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fdf6e3;
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; // TODO 分からん
+    z-index: 50;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        justify-content: flex-start;
+    }
+    .burger {
+        display: none;
+    }
+    .menu {
+        opacity: 1;
+        pointer-events: all;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        max-width: 100%;
+    }
+    .nav-list {
+        flex-direction: row;
+        li {
+            margin: 0 1rem;
+        }
+    }
+}
+
+.body {
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+* {
+    outline: 2px red solid;
+}
