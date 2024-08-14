@@ -16,3 +16,12 @@ if (overlay) {
         overlay.classList.remove("is-active");
     });
 }
+
+const color_theme = document.querySelector("#toggle-theme");
+if (color_theme) {
+    const body = document.querySelector("#body");
+    color_theme.addEventListener("click", () => {
+        body.classList.toggle("dark-theme");
+        body.classList.toggle("light-theme");
+    });
+}
