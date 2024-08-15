@@ -1,0 +1,33 @@
+// 全体に適用
+
+@use "util/theme";
+
+.all-wrapper {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 1rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    // bodyにdisplay: flexと迷ったけどとりあえずこっち
+    margin: auto;
+    width: auto;
+
+    // border: dotted 3px greenyellow;
+}
+
+body {
+    margin: 0;
+    background-color: var(--rev-blurred-text-color);
+
+    // border: dotted 3px skyblue;
+}
+
+* {
+    font-family: "UD デジタル 教科書体 NP-B", "serif";
+}

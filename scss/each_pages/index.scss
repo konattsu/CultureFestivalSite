@@ -1,0 +1,52 @@
+h1 {
+    width: 100%;
+    font-size: calc(8vw + 2rem);
+    text-align: center;
+}
+
+h2 {
+    font-size: calc(1.5vw + 1.3rem);
+    border-left: solid #d33682 3.3px;
+    border-bottom: solid #d33682 1.3px;
+    max-width: 500px;
+    padding: 9px;
+
+    opacity: 0;
+    transform: translateY(40px) translateX(-5px);
+    transition: transform 0.5s ease-out;
+    &.visible {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+.math-formulas-wrapper {
+    height: auto;
+    width: 100%;
+    max-height: 500px;
+    aspect-ratio: 1;
+    align-items: center;
+    transition: transform 1s ease;
+
+    .math-formulas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:active {
+        transition: transform 5s;
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        border: solid 1px #cb4b16;
+    }
+}
+
+// こういう記述方法, 汎用性高いかも
+* .math-formulas-wrapper:active {
+    user-select: none;
+    overflow: hidden;
+}
+
+// * {
+//     border: solid 1.3px red;
+// }

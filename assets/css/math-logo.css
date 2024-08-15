@@ -1,0 +1,36 @@
+.light-theme {
+  --text-color: #000;
+  --text-rgb-color: 0, 0, 0;
+  --rev-text-color: #fff;
+  --rev-text-rgb-color: 255, 255, 255;
+  --background-color: #eee;
+  --background-rgb-color: 238, 238, 238;
+  --blurred-text-color: #222;
+  --blurred-text-rgb-color: 34, 34, 34;
+  --rev-blurred-text-color: #ddd;
+  --rev-blurred-text-rgb-color: 221, 221, 221;
+}
+
+.dark-theme {
+  --text-color: #fff;
+  --text-rgb-color: 255, 255, 255;
+  --rev-text-color: #000;
+  --rev-text-rgb-color: 0, 0, 0;
+  --background-color: #002b36;
+  --background-rgb-color: 0, 43, 54;
+  --blurred-text-color: #ddd;
+  --blurred-text-rgb-color: 221, 221, 221;
+  --rev-blurred-text-color: #222;
+  --rev-blurred-text-rgb-color: 34, 34, 34;
+}
+
+svg {
+  --math-formulas-color-1: var(--text-color);
+  --math-formulas-color-2: var(--rev-blurred-text-color);
+}
+svg .svg-math-formulas-a {
+  fill: var(--math-formulas-color-1);
+}
+svg .svg-math-formulas-b {
+  fill: var(--math-formulas-color-2);
+}/*# sourceMappingURL=math-logo.css.map */

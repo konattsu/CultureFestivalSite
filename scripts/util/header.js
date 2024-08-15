@@ -3,9 +3,9 @@ const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY < lastScrollY) {
-        header.classList.add("is-show");
+        header.classList.add("show");
     } else {
-        header.classList.remove("is-show");
+        header.classList.remove("show");
     }
     lastScrollY = window.scrollY;
 });

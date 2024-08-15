@@ -1,4 +1,11 @@
 {
+    "name": "math-club",
+    "description": "cultural festival",
+    "license": "AGPL-3.0-only",
+    "version": "0.1.0",
+    "whyDoesThisMakeDisruptiveChangesToTheCode": {
+        "lint:css": "stylelint --fix **/*.{css,scss,sass}"
+    },
     "devDependencies": {
         "prettier": "^3.3.3",
         "stylelint": "^16.8.1",
