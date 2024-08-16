@@ -1,7 +1,22 @@
 h1 {
-    width: 100%;
-    font-size: calc(8vw + 2rem);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     text-align: center;
+    line-height: 60px;
+    height: 60px;
+    margin: auto;
+
+    font-size: calc(8vw + 2rem);
+    filter: none;
+    color: #fff;
+    -webkit-text-stroke: calc(0.4vw + 10px) #000;
+    paint-order: stroke;
+
+    user-select: none;
 }
 
 h2 {
@@ -10,6 +25,7 @@ h2 {
     border-bottom: solid #d33682 1.3px;
     max-width: 500px;
     padding: 9px;
+    font-family: "serif";
 
     opacity: 0;
     transform: translateY(40px) translateX(-5px);
@@ -20,31 +36,41 @@ h2 {
     }
 }
 
-.math-formulas-wrapper {
+.title-and-formulas-wrapper {
+    position: relative;
     height: auto;
     width: 100%;
-    max-height: 500px;
+    max-height: 700px;
     aspect-ratio: 1;
     align-items: center;
     transition: transform 1s ease;
+    z-index: 1;
 
     .math-formulas {
+        filter: blur(3px);
         display: block;
         width: 100%;
         height: 100%;
     }
 
     &:active {
-        transition: transform 5s;
+        transition: transform 4.5s;
         transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
         border: solid 1px #cb4b16;
+        .math-formulas {
+            filter: none;
+        }
     }
 }
 
-// こういう記述方法, 汎用性高いかも
-* .math-formulas-wrapper:active {
+:has(.math-formulas-wrapper:active) {
     user-select: none;
     overflow: hidden;
+}
+
+p {
+    font-size: calc(1rem + 0.35vw);
+    line-height: calc(1.8rem + 1.2vw);
 }
 
 // * {

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template</title>
+    <link rel="stylesheet" href="./../assets/css/main.css" class="css" />
+    <link rel="stylesheet" href="./../assets/css/header.css" class="css" />
+    <link rel="stylesheet" href="./../assets/css/move_top.css" class="css" />
+    <link rel="stylesheet" href="./../assets/css/md.css" class="css" />
+    <link rel="stylesheet" href="./../assets/css/contents.css" class="css" />
+  </head>
+
+  <body class="body" id="body">
+    <div class="all-wrapper">
+      <!-- ヘッダー begin -->
+      <div class="overlay" id="overlay"></div>
+      <header class="header show" id="header">
+        <button class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="menu" id="menu">
+          <ul class="nav-list">
+            <li><a href="https://math-club.net">ホーム</a></li>
+            <li>
+              <a href="https://math-club.net/pages/contents.html">コンテンツ</a>
+            </li>
+            <li>
+              <button class="settings-button" id="settings-button">more</button>
+            </li>
+            <ul class="change-settings" id="change-settings">
+              <button class="toggle-theme settings" id="toggle-theme">
+                theme
+              </button>
+              <button class="toggle-hand settings" id="toggle-hand">
+                mirror
+              </button>
+              <button class="toggle-up-arrow settings" id="toggle-up-arrow">
+                upArrow
+              </button>
+              <button class="copy-current-url settings" id="copy-current-url">
+                copyUrl
+              </button>
+            </ul>
+          </ul>
+        </nav>
+        <script src="./../scripts/util/humburger.js" defer></script>
+      </header>
+      <script src="./../scripts/util/header.js" defer></script>
+      <!-- ヘッダー end -->
+
+      <!-- topに戻る begin -->
+      <script src="./../scripts/util/fetch_svg.js" defer></script>
+      <div class="svg"></div>
+      <svg class="up-arrow" id="up-arrow">
+        <use href="#up-arrow-svg-src"></use>
+      </svg>
+      <script src="./../scripts/util/move_top.js" defer></script>
+      <!-- topに戻る end -->
+
+      <!-- メイン begin -->
+      <div class="main-content">
+        <h1>コンテンツ一覧</h1>
+        <br />
+        <p>
+          数学部員が作成した部誌、ミニゲームなどの一覧です。タップしていただくことで閲覧できます。
+        </p>
+        <br />
+
+        <!-- コンテンツ一覧 begin -->
+        <div class="contents-list">
+          <div class="content club-notebook">
+            <a href="https://math-club.net/pages/contents/implementation">
+              <svg class="club-logo-svg content-svg">
+                <use href="#club-logo-svg-src"></use>
+              </svg>
+              <span class="content-text">部誌</span>
+            </a>
+          </div>
+          <div class="content cryptanalysis">
+            <a href="https://math-club.net/pages/contents/implementation">
+              <svg class="content-svg cryptanalysis-svg">
+                <use href="#cryptanalysis-svg-src"></use>
+              </svg>
+              <span class="content-text">暗号解読</span>
+            </a>
+          </div>
+          <div class="content dyn-vision">
+            <a href="https://math-club.net/pages/contents/implementation">
+              <svg class="content-svg">
+                <use href="#"></use>
+              </svg>
+              <span class="content-text">動体視力勝負</span>
+            </a>
+          </div>
+          <div class="content tech-used">
+            <a href="https://math-club.net/pages/contents/implementation">
+              <svg class="content-svg">
+                <use href="#"></use>
+              </svg>
+              <span class="content-text">使用技術等</span>
+            </a>
+          </div>
+        </div>
+        <!-- コンテンツ一覧 end -->
+      </div>
+      <!-- メイン end -->
+    </div>
+  </body>
+  <script src="./../scripts/util/grant_color_theme.js" defer></script>
+</html>

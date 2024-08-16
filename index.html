@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>数学部公式</title>
-    <link rel="stylesheet" href="./assets/css/header.css" class="css" />
     <link rel="stylesheet" href="./assets/css/main.css" class="css" />
+    <link rel="stylesheet" href="./assets/css/header.css" class="css" />
     <link rel="stylesheet" href="./assets/css/move_top.css" class="css" />
-    <link rel="stylesheet" href="./assets/css/index.css" class="css" />
-    <link rel="stylesheet" href="./assets/css/math-logo.css" class="css" />
+    <link rel="stylesheet" href="./assets/css/md.css" class="css" />
+    <link rel="stylesheet" href="./assets/css/home.css" class="css" />
+    <link rel="stylesheet" href="./assets/css/math_logo.css" class="css" />
   </head>
 
   <body class="body" id="body">
@@ -23,10 +24,10 @@
         </button>
         <nav class="menu" id="menu">
           <ul class="nav-list">
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">コンテンツ</a></li>
-            <li><a href="#">投票</a></li>
-            <!-- <li><a href="#">お問い合わせ</a></li> -->
+            <li><a href="https://math-club.net">ホーム</a></li>
+            <li>
+              <a href="https://math-club.net/pages/contents.html">コンテンツ</a>
+            </li>
             <li>
               <button class="settings-button" id="settings-button">more</button>
             </li>
@@ -40,52 +41,68 @@
               <button class="toggle-up-arrow settings" id="toggle-up-arrow">
                 upArrow
               </button>
-              <button class="get-current-url settings" id="get-current-url">
-                getUrl
+              <button class="copy-current-url settings" id="copy-current-url">
+                copyUrl
               </button>
             </ul>
           </ul>
         </nav>
-        <script src="./scripts/util/humburger.js" async></script>
+        <script src="./scripts/util/humburger.js" defer></script>
       </header>
-      <script src="./scripts/util/header.js" async></script>
+      <script src="./scripts/util/header.js" defer></script>
       <!-- ヘッダー end -->
 
       <!-- topに戻る begin -->
-      <script src="./scripts/util/fetch_svg.js" async></script>
+      <script src="./../scripts/util/fetch_svg.js" defer></script>
       <div class="svg"></div>
       <svg class="up-arrow" id="up-arrow">
         <use href="#up-arrow-svg-src"></use>
       </svg>
-      <script src="./scripts/util/move_top.js" async></script>
+      <script src="./../scripts/util/move_top.js" defer></script>
       <!-- topに戻る end -->
 
+      <!-- メイン begin -->
       <div class="main-content">
-        <h1>数学部</h1>
-        <div class="math-formulas-wrapper">
+        <div class="title-and-formulas-wrapper">
+          <h1>数学部</h1>
           <svg class="math-formulas">
             <use href="#mathematical-formulas-svg-src"></use>
           </svg>
         </div>
-        <h2>このサイトについて</h2>
+
+        <h2 class="visible">このサイトについて</h2>
         <p>
           数学部`文化祭特設`公式サイトです。主に数学、プログラミング関連の内容を記載しております。是非ご堪能ください！
         </p>
-        <p>※不特定多数へのサイトの共有はご控え頂きますようお願いします。</p>
+        <p>
+          <span class="md-warning"
+            >不特定多数へのサイトの共有はご控え頂きますようお願いします。</span
+          >
+        </p>
         <h2>コンテンツ一覧</h2>
         <p>
-          数学部員が作成した部誌、ブラウザ上で遊べるミニゲームなどがあります。こちらのページに掲載しています。
+          数学部員が作成した部誌、ブラウザ上で遊べるミニゲームなどがあります。<a
+            class="click-here"
+            href="#"
+            >こちらのページ</a
+          >に掲載しています。<span class="md-note"
+            >パンフレット記載の暗号解読もこちらです。</span
+          >
         </p>
         <h2>投票のお願い</h2>
         <p>あああ</p>
         <h2>その他</h2>
         <p>
-          数学部は<b>4階、407室</b>にて展示をしています。例年通りパズルなどを設置しています。また今年度は、数学に関する動画を冷房の効いた涼しい室内で視聴できます。座席数を30席以上と多く用意しておりますので、是非お越しください。
+          数学部は<span class="md-emphasis">4階 407室</span
+          >にて展示をしています。例年通りパズルなどを設置しています。また今年度は、数学に関する動画を冷房の効いた涼しい室内で視聴できます。座席数を30席以上と多く用意しておりますので、是非お越しください。
         </p>
         <p>その他ご不明な点がございましたら、数学部員へお声がけください。</p>
       </div>
+      <!-- メイン end -->
     </div>
   </body>
-  <script src="./scripts/util/grant_color_theme.js" async></script>
-  <script src="./scripts/each_pages/index/visiable.js" async></script>
+  <!-- カラーテーマ決めるやつ -->
+  <script src="./scripts/util/grant_color_theme.js" defer></script>
+
+  <script src="./scripts/each_pages/index/visiable.js" defer></script>
 </html>

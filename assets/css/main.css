@@ -26,16 +26,16 @@
 }
 
 .all-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
   padding: 1rem;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
   max-width: 950px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin: auto;
   width: auto;
 }
@@ -46,5 +46,12 @@ body {
 }
 
 * {
-  font-family: "UD デジタル 教科書体 NP-B", "serif";
+  font-family: "UD デジタル 教科書体 NP-B", "gothic";
+}
+
+.click-here {
+  color: var(--text-color);
+  font-size: 115%;
+  -webkit-text-decoration: dotted underline 3px #268bd2;
+          text-decoration: dotted underline 3px #268bd2;
 }/*# sourceMappingURL=main.css.map */

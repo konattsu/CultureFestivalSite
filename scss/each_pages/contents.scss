@@ -1,0 +1,68 @@
+@use "./../util/theme";
+
+h1 {
+    font-size: calc(2vw + 2rem);
+    text-align: center;
+}
+
+p {
+    font-size: calc(1rem + 0.35vw);
+    line-height: calc(1.8rem + 1.2vw);
+}
+
+.contents-list {
+    // ref(繋げて検索): https://developer.mozilla.org/ja/docs/Web/CSS/
+    // CSS_flexible_box_layout/Mastering_wrapping_of_flex_items
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    border-top: solid 0.01px #d33682;
+    border-bottom: solid 0.01px #d33682;
+    margin: 0.1rem;
+}
+
+.content {
+    border: solid 2px #268bd2;
+    margin: 1rem;
+}
+
+.content a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.content-text {
+    font-size: 140%;
+    color: var(--text-color);
+    padding-left: 1.5rem;
+    line-height: 100%;
+}
+
+// ロゴ関連 ここから下
+
+svg.content-svg {
+    display: inline;
+    width: 100%;
+    aspect-ratio: 1;
+    z-index: 10;
+}
+
+// 部誌のロゴ
+.svg-club-logo-a {
+    fill: #fff;
+}
+
+.svg-club-logo-b {
+    fill: #000;
+}
+
+// 暗号解読のロゴ
+.cryptanalysis-a {
+    fill: #fff;
+}
+
+.cryptanalysis-b {
+    fill: #fff;
+}

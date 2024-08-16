@@ -7,7 +7,7 @@ header {
     width: 100%;
     padding: 0.5rem 0;
     margin: 0;
-    background-color: #6c71c4;
+    background-color: var(--background-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ header {
     visibility: visible;
 
     &.is-active {
-        background-color: #6c71c4;
+        // background-color: #6c71c4;
         --opacity: 0;
         --rotate: 135deg;
         --translate: 0;
@@ -81,7 +81,9 @@ header {
     height: auto;
     padding: 1rem;
     pointer-events: none;
-    background-color: #6c71c4;
+    background-color: var(--background-color); // TODO
+    border: solid #d33682 2px;
+    border-right: none;
     opacity: 0;
     transition: opacity 0s ease;
     border-radius: 30px 0 0 30px;
@@ -116,10 +118,9 @@ header {
     }
 
     a {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         font-weight: 800;
-        color: #fff;
-        -webkit-text-stroke: 1.5px #000;
+        color: var(--text-color);
         text-decoration: none;
         &:hover {
             text-decoration: #d33682 underline;
@@ -168,7 +169,7 @@ header {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 700;
-    width: 50%;
+    width: 65%;
     color: #000;
     border: 2px solid #000;
     border-radius: 15px;
@@ -206,7 +207,7 @@ body.non-up-arrow .toggle-up-arrow {
     background-color: #d35692;
 }
 
-.get-current-url {
+.copy-current-url {
     background-color: #fff;
     &:active {
         background-color: #76bd00;
@@ -232,6 +233,7 @@ body.non-up-arrow .toggle-up-arrow {
     header {
         justify-content: space-between;
         visibility: visible;
+        border-bottom: solid 1px var(--text-color);
     }
     .burger {
         display: none;
@@ -246,6 +248,7 @@ body.non-up-arrow .toggle-up-arrow {
         max-width: 100%;
         pointer-events: all;
         background-color: transparent;
+        border: solid 0px #fff;
         opacity: 1;
         a {
             padding: 0;
@@ -284,5 +287,10 @@ body.left {
         right: auto;
         left: 0;
         border-radius: 0 30px 30px 0;
+        border: solid #d33682 2px;
+        border-left: none;
+        @media (min-width: 1000px) {
+            border: none;
+        }
     }
 }

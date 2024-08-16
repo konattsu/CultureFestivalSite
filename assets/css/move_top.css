@@ -50,8 +50,8 @@ svg .svg-up-arrow-c {
 }
 svg.up-arrow {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   transition: all 0.15s ease;
 }
 svg.up-arrow:hover {

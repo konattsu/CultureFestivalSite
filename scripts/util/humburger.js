@@ -54,9 +54,9 @@ if (toggleUpArrow) {
 }
 
 // url取得
-const getCurrentUrl = document.querySelector("#get-current-url");
-if (getCurrentUrl) {
-    getCurrentUrl.addEventListener("click", () => {
+const copyCurrentUrl = document.querySelector("#copy-current-url");
+if (copyCurrentUrl) {
+    copyCurrentUrl.addEventListener("click", () => {
         var gotCurrentUrl = location.href;
         if (!navigator.clipboard) {
             alert("お使いのブラウザはこの機能に対応していません。");
