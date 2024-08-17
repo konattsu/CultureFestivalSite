@@ -4,6 +4,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const bodyForSettings = document.querySelector("#body");
     const savedClass = localStorage.getItem("settingsClass");
     if (savedClass) {
+        savedClass = verifyConsistency(savedClass);
+        console.log("fetched settings: %s", savedClass);
         bodyForSettings = savedClass;
+    } else {
+        console.log("fetched settings is none");
     }
 });

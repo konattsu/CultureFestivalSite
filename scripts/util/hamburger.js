@@ -7,7 +7,7 @@ if (burger) {
         burger.classList.toggle("is-active");
         menu.classList.toggle("is-active");
         overlay.classList.toggle("is-active");
-        callWhenClosed();
+        callWhenClosedHamburger();
     });
 }
 if (overlay) {
@@ -15,14 +15,13 @@ if (overlay) {
         burger.classList.remove("is-active");
         menu.classList.remove("is-active");
         overlay.classList.remove("is-active");
-        callWhenClosed();
+        callWhenClosedHamburger();
     });
 }
 
-function callWhenClosed() {
+function callWhenClosedHamburger() {
     changeSettings.classList.remove("settings-open");
     settings.classList.remove("settings-open");
-    storeSettings();
 }
 
 // 設定切り替えの画面, 開閉
@@ -44,16 +43,20 @@ if (colorTheme) {
     colorTheme.addEventListener("click", () => {
         body.classList.toggle("dark-theme");
         body.classList.toggle("light-theme");
+        console.log("nice");
+        storeSettings();
     });
 }
 if (toggleHand) {
     toggleHand.addEventListener("click", () => {
         body.classList.toggle("left");
+        storeSettings();
     });
 }
 if (toggleUpArrow) {
     toggleUpArrow.addEventListener("click", () => {
         body.classList.toggle("non-up-arrow");
+        storeSettings();
     });
 }
 
