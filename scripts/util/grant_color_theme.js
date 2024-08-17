@@ -9,9 +9,9 @@ const bodyForGrant = document.querySelector("#body");
 
 if (!bodyForGrant.classList.contains("dark-theme" || "light-theme")) {
     if (isDarkMode()) {
-        console.log("Selected dark theme");
+        bodyForGrant.classList.add("dark-theme");
     } else {
-        console.log("Selected light theme");
+        bodyForGrant.classList.add("light-theme");
     }
 }
 
