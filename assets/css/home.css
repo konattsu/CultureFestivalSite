@@ -26,13 +26,6 @@ h2 {
   max-width: 500px;
   padding: 9px;
   font-family: "serif";
-  opacity: 0;
-  transform: translateY(40px) translateX(-5px);
-  transition: transform 0.5s ease-out;
-}
-h2.visible {
-  opacity: 1;
-  transform: translateY(0) translateX(0);
 }
 
 .title-and-formulas-wrapper {

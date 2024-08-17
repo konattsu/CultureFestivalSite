@@ -36,15 +36,10 @@ header {
   top: 0;
   left: 0;
   z-index: 90;
-  transition: transform 0.5s cubic-bezier(0, 0.7, 1, 1);
-  transform: translateY(-100%);
   visibility: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-header.show {
-  transform: translateY(0);
 }
 
 .burger {
@@ -237,7 +232,7 @@ body.non-up-arrow .toggle-up-arrow {
   display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   header {
     justify-content: space-between;
     visibility: visible;
@@ -293,7 +288,7 @@ body.left .menu {
   border: solid #d33682 2px;
   border-left: none;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   body.left .menu {
     border: none;
   }
