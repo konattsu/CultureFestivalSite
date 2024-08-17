@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (savedClass) {
         savedClass = verifyConsistency(savedClass);
         console.log("fetched settings: %s", savedClass);
-        bodyForSettings = savedClass;
+        bodyForSettings.classList = savedClass;
     } else {
         console.log("fetched settings is none");
     }

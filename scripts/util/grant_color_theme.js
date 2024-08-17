@@ -26,13 +26,16 @@ if (!bodyForGrant.classList.contains("dark-theme" || "light-theme")) {
 /// @param: String, querySelectorで取ってきたもの
 /// @return: String, paramの整合性を合わせたもの
 function verifyConsistency(savedClass) {
-    if (savedClass.contains("dark-theme" && "light-theme")) {
+    if (
+        savedClass.includes("dark-theme") &&
+        savedClass.includes("light-theme")
+    ) {
         if (isDarkMode()) {
             console.log("remove `dark-theme` class");
-            savedClass.classList.remove("dark-theme");
+            savedClass = savedClass.replace("dark-theme", "").trim();
         } else {
             console.log("remove `light-theme` class");
-            savedClass.classList.remove("light-theme");
+            savedClass = savedClass.replace("light-theme", "").trim();
         }
     } else {
         console.log("the consistency is right");
