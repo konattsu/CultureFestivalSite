@@ -5,8 +5,12 @@ function isDarkMode() {
     );
 }
 
-if (isDarkMode()) {
-    document.body.classList.add("dark-theme");
-} else {
-    document.body.classList.add("light-theme");
+const bodyForGrant = document.querySelector("#body");
+
+if (!bodyForGrant.classList.contains("dark-theme" || "light-theme")) {
+    if (isDarkMode()) {
+        bodyForGrant.classList.add("dark-theme");
+    } else {
+        bodyForGrant.classList.add("light-theme");
+    }
 }

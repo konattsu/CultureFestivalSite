@@ -49,20 +49,38 @@ svg.content-svg {
     z-index: 10;
 }
 
-// 部誌のロゴ
-.svg-club-logo-a {
-    fill: #fff;
+body {
+    // svgの実際のコードをbodyの上に記述しているためその分消す
+    // このsvg記述に対しdisplay: none; にするとclip-pathの
+    // 表示ができなくなるので必須
+    margin-top: -155px;
 }
 
-.svg-club-logo-b {
-    fill: #000;
+h1 {
+    // 先ほどのbodyで削られた分を気持ち補う
+    padding-top: 1.5rem;
+}
+// 部誌のロゴ
+.club-logo-svg-a {
+    stroke: var(--text-color);
 }
 
 // 暗号解読のロゴ
-.cryptanalysis-a {
-    fill: #fff;
+.cryptanalysis-svg-a,
+.cryptanalysis-svg-b {
+    stroke: var(--text-color);
 }
 
-.cryptanalysis-b {
-    fill: #fff;
+// vsのロゴ
+.vs-svg-a {
+    stroke: var(--text-color);
+}
+
+// 使用技術のロゴ
+.tech-svg-a {
+    stroke: var(--text-color);
+}
+.tech-svg-b {
+    stroke: var(--rev-text-color);
+    fill: var(--text-color);
 }

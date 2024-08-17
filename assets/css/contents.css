@@ -69,18 +69,32 @@ svg.content-svg {
   z-index: 10;
 }
 
-.svg-club-logo-a {
-  fill: #fff;
+body {
+  margin-top: -155px;
 }
 
-.svg-club-logo-b {
-  fill: #000;
+h1 {
+  padding-top: 1.5rem;
 }
 
-.cryptanalysis-a {
-  fill: #fff;
+.club-logo-svg-a {
+  stroke: var(--text-color);
 }
 
-.cryptanalysis-b {
-  fill: #fff;
+.cryptanalysis-svg-a,
+.cryptanalysis-svg-b {
+  stroke: var(--text-color);
+}
+
+.vs-svg-a {
+  stroke: var(--text-color);
+}
+
+.tech-svg-a {
+  stroke: var(--text-color);
+}
+
+.tech-svg-b {
+  stroke: var(--rev-text-color);
+  fill: var(--text-color);
 }/*# sourceMappingURL=contents.css.map */

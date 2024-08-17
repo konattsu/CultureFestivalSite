@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>template</title>
+    <title>コンテンツ一覧 - 数学部</title>
     <link rel="stylesheet" href="./../assets/css/main.css" class="css" />
     <link rel="stylesheet" href="./../assets/css/header.css" class="css" />
     <link rel="stylesheet" href="./../assets/css/move_top.css" class="css" />
@@ -12,6 +12,204 @@
   </head>
 
   <body class="body" id="body">
+    <!-- このページに使うsvg並べとく begin-->
+    <svg>
+      <!-- 使用技術のロゴ begin -->
+      <symbol id="tech-logo-svg-src" viewBox="0 0 100 100">
+        <rect
+          class="tech-svg-a"
+          x="20"
+          y="10"
+          width="60"
+          height="80"
+          rx="10"
+          ry="10"
+          fill="none"
+          stroke-width="3"
+        />
+        <line
+          class="tech-svg-a"
+          x1="35"
+          y1="25"
+          x2="70"
+          y2="25"
+          stroke-width="2"
+        />
+        <line
+          class="tech-svg-a"
+          x1="30"
+          y1="40"
+          x2="65"
+          y2="40"
+          stroke-width="2"
+        />
+        <line
+          class="tech-svg-a"
+          x1="35"
+          y1="55"
+          x2="70"
+          y2="55"
+          stroke-width="2"
+        />
+        <line
+          class="tech-svg-a"
+          x1="30"
+          y1="70"
+          x2="46"
+          y2="70"
+          stroke-width="2"
+        />
+        <polygon
+          class="tech-svg-b"
+          points="50,70 90,5 85,2 45,67 44.5,73.5"
+          stroke-width="1"
+        />
+      </symbol>
+      <!-- 使用技術のロゴ end -->
+      <!-- vsのロゴ begin -->
+      <symbol id="vs-logo-svg-src" viewBox="0 0 100 100">
+        <defs>
+          <clipPath id="cut-s-char-top">
+            <rect x="0" y="0" width="100" height="25" />
+          </clipPath>
+          <clipPath id="cut-s-char-bottom">
+            <rect x="0" y="75" width="100" height="25" />
+          </clipPath>
+        </defs>
+        <polyline
+          class="vs-svg-a"
+          points="10,10 30,90 50,10"
+          fill="none"
+          stroke-width="5"
+        />
+        <line
+          class="vs-svg-a"
+          x1="57.5"
+          y1="23.5"
+          x2="92.5"
+          y2="76.5"
+          stroke-width="5"
+        />
+        <ellipse
+          class="vs-svg-a"
+          cx="75"
+          cy="25"
+          rx="17"
+          ry="13"
+          fill="none"
+          stroke-width="5"
+          clip-path="url(#cut-s-char-top)"
+        />
+        <ellipse
+          class="vs-svg-a"
+          cx="75"
+          cy="75"
+          rx="17"
+          ry="13"
+          fill="none"
+          stroke-width="5"
+          clip-path="url(#cut-s-char-bottom)"
+        />
+      </symbol>
+      <!-- vsのロゴ end -->
+      <!-- 暗号解読 begin -->
+      <!-- お借りした元, (license確認済み) https://iconbox.fun/ -->
+      <symbol id="cryptanalysis-svg-src" viewBox="0 0 48 48">
+        <defs>
+          <style>
+            .cryptanalysis-svg-internal-a,
+            .cryptanalysis-svg-a,
+            .cryptanalysis-svg-b {
+              fill: none;
+            }
+            .cryptanalysis-svg-a,
+            .cryptanalysis-svg-b {
+              stroke-linejoin: round;
+              stroke-width: 2px;
+            }
+            .cryptanalysis-svg-b {
+              stroke-linecap: round;
+            }
+          </style>
+        </defs>
+        <title>lock_open_24</title>
+        <g id="レイヤー_2_cryptanalysis-svg">
+          <g id="Rect_最後透明に_cryptanalysis-svg">
+            <rect class="cryptanalysis-svg-internal-a" width="48" height="48" />
+          </g>
+          <g id="icon">
+            <rect
+              class="cryptanalysis-svg-a"
+              x="11.13"
+              y="20.13"
+              width="26"
+              height="22"
+            />
+            <path
+              class="cryptanalysis-svg-b"
+              d="M33.12,20.12v-6a9,9,0,0,0-17.29-3.5"
+            />
+            <line
+              class="cryptanalysis-svg-b"
+              x1="24.13"
+              y1="29.13"
+              x2="24.13"
+              y2="33.13"
+            />
+          </g>
+        </g>
+      </symbol>
+      <!-- 暗号解読 end -->
+      <!-- 部誌のロゴ begin -->
+      <symbol id="club-logo-svg-src" viewBox="0 0 100 100">
+        <rect
+          class="club-logo-svg-a"
+          x="20"
+          y="10"
+          width="60"
+          height="80"
+          rx="10"
+          ry="10"
+          fill="none"
+          stroke-width="3"
+        />
+        <line
+          class="club-logo-svg-a"
+          x1="35"
+          y1="25"
+          x2="70"
+          y2="25"
+          stroke-width="2"
+        />
+        <line
+          class="club-logo-svg-a"
+          x1="30"
+          y1="40"
+          x2="65"
+          y2="40"
+          stroke-width="2"
+        />
+        <line
+          class="club-logo-svg-a"
+          x1="35"
+          y1="55"
+          x2="70"
+          y2="55"
+          stroke-width="2"
+        />
+        <line
+          class="club-logo-svg-a"
+          x1="30"
+          y1="70"
+          x2="65"
+          y2="70"
+          stroke-width="2"
+        />
+      </symbol>
+      <!-- 部誌のロゴ end -->
+    </svg>
+    <!-- svg並べ end -->
+
     <div class="all-wrapper">
       <!-- ヘッダー begin -->
       <div class="overlay" id="overlay"></div>
@@ -65,13 +263,13 @@
         <h1>コンテンツ一覧</h1>
         <br />
         <p>
-          数学部員が作成した部誌、ミニゲームなどの一覧です。タップしていただくことで閲覧できます。
+          数学部員が作成した部誌、ミニゲームなどの一覧です。気になる項目をタップしていただくことで各ページに移動できます。
         </p>
         <br />
 
         <!-- コンテンツ一覧 begin -->
         <div class="contents-list">
-          <div class="content club-notebook">
+          <div class="content">
             <a href="https://math-club.net/pages/contents/implementation">
               <svg class="club-logo-svg content-svg">
                 <use href="#club-logo-svg-src"></use>
@@ -79,7 +277,7 @@
               <span class="content-text">部誌</span>
             </a>
           </div>
-          <div class="content cryptanalysis">
+          <div class="content">
             <a href="https://math-club.net/pages/contents/implementation">
               <svg class="content-svg cryptanalysis-svg">
                 <use href="#cryptanalysis-svg-src"></use>
@@ -87,18 +285,18 @@
               <span class="content-text">暗号解読</span>
             </a>
           </div>
-          <div class="content dyn-vision">
+          <div class="content">
             <a href="https://math-club.net/pages/contents/implementation">
               <svg class="content-svg">
-                <use href="#"></use>
+                <use href="#vs-logo-svg-src"></use>
               </svg>
               <span class="content-text">動体視力勝負</span>
             </a>
           </div>
-          <div class="content tech-used">
+          <div class="content">
             <a href="https://math-club.net/pages/contents/implementation">
               <svg class="content-svg">
-                <use href="#"></use>
+                <use href="#tech-logo-svg-src"></use>
               </svg>
               <span class="content-text">使用技術等</span>
             </a>
@@ -110,4 +308,5 @@
     </div>
   </body>
   <script src="./../scripts/util/grant_color_theme.js" defer></script>
+  <script src="./../scripts/util/fetch_settings.js" defer></script>
 </html>

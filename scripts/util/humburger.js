@@ -7,8 +7,7 @@ if (burger) {
         burger.classList.toggle("is-active");
         menu.classList.toggle("is-active");
         overlay.classList.toggle("is-active");
-        changeSettings.classList.remove("settings-open");
-        settings.classList.remove("settings-open");
+        callWhenClosed();
     });
 }
 if (overlay) {
@@ -16,9 +15,14 @@ if (overlay) {
         burger.classList.remove("is-active");
         menu.classList.remove("is-active");
         overlay.classList.remove("is-active");
-        changeSettings.classList.remove("settings-open");
-        settings.classList.remove("settings-open");
+        callWhenClosed();
     });
+}
+
+function callWhenClosed() {
+    changeSettings.classList.remove("settings-open");
+    settings.classList.remove("settings-open");
+    storeSettings();
 }
 
 // 設定切り替えの画面, 開閉

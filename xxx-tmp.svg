@@ -1,0 +1,8 @@
+<symbol id="tech-logo-svg-src" viewBox="0 0 100 100">
+<rect x="20" y="10" width="60" height="80" rx="10" ry="10" fill="none" stroke="#fff" stroke-width="3" />
+<line class="tech-svg-a" x1="30" y1="25" x2="70" y2="25" stroke-width="2" />
+<line class="tech-svg-a" x1="30" y1="40" x2="70" y2="40" stroke-width="2" />
+<line class="tech-svg-a" x1="30" y1="55" x2="70" y2="55" stroke-width="2" />
+<line class="tech-svg-a" x1="30" y1="70" x2="46" y2="70" stroke-width="2" />
+<polygon class="tech-svg-b" points="50,70 90,5 85,2 45,67 44.5,73.5" stroke-width="1" />
+</symbol>
