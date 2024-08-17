@@ -43,7 +43,6 @@ if (colorTheme) {
     colorTheme.addEventListener("click", () => {
         body.classList.toggle("dark-theme");
         body.classList.toggle("light-theme");
-        console.log("clicked");
         storeSettings();
     });
 }

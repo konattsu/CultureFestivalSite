@@ -5,9 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
     var savedClass = localStorage.getItem("settingsClass");
     if (savedClass) {
         savedClass = verifyConsistency(savedClass);
-        console.log("fetched settings: %s", savedClass);
         bodyForSettings.classList = savedClass;
-    } else {
-        console.log("fetched settings is none");
     }
 });
