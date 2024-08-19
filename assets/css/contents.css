@@ -29,11 +29,6 @@ h1 {
   text-align: center;
 }
 
-p {
-  font-size: calc(1rem + 0.35vw);
-  line-height: calc(1.8rem + 1.2vw);
-}
-
 .contents-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

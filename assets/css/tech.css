@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .light-theme {
   --text-color: #000;
   --text-rgb-color: 0, 0, 0;
@@ -23,40 +22,26 @@
   --blurred-text-rgb-color: 187, 187, 187;
   --rev-blurred-text-color: #444;
   --rev-blurred-text-rgb-color: 68, 68, 68;
+} 
+h1 {
+  font-size: calc(2vw + 2rem);
+  text-align: center;
 }
 
-.all-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--background-color);
+h2 {
+  font-size: calc(1.5vw + 1.3rem);
+  border-left: solid #d33682 3.3px;
+  border-bottom: solid #d33682 1.3px;
+  max-width: 500px;
+  padding: 9px;
+  font-family: "serif";
+}
+
+p.brief {
+  font-size: calc(0.5vw + 1rem);
+}
+
+.dummy-url {
+  text-decoration: underline;
   color: var(--text-color);
-  margin: 0;
-  padding: 1rem;
-  padding-top: 70px;
-  padding-bottom: 120px;
-  max-width: 950px;
-  margin: auto;
-  width: auto;
-}
-
-body {
-  margin: 0;
-  background-color: var(--rev-blurred-text-color);
-}
-
-* {
-  font-family: "UD デジタル 教科書体 NP-B", "gothic";
-}
-
-p {
-  font-size: calc(1rem + 0.35vw);
-  line-height: calc(1.8rem + 1.2vw);
-}
-
-.click-here {
-  color: var(--text-color);
-  font-size: 115%;
-  -webkit-text-decoration: dotted underline 3px #268bd2;
-          text-decoration: dotted underline 3px #268bd2;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=tech.css.map */

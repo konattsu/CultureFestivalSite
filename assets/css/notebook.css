@@ -1,0 +1,79 @@
+.light-theme {
+  --text-color: #000;
+  --text-rgb-color: 0, 0, 0;
+  --rev-text-color: #fff;
+  --rev-text-rgb-color: 255, 255, 255;
+  --background-color: #eee;
+  --background-rgb-color: 238, 238, 238;
+  --blurred-text-color: #444;
+  --blurred-text-rgb-color: 68, 68, 68;
+  --rev-blurred-text-color: #bbb;
+  --rev-blurred-text-rgb-color: 187, 187, 187;
+}
+
+.dark-theme {
+  --text-color: #fff;
+  --text-rgb-color: 255, 255, 255;
+  --rev-text-color: #000;
+  --rev-text-rgb-color: 0, 0, 0;
+  --background-color: #002b36;
+  --background-rgb-color: 0, 43, 54;
+  --blurred-text-color: #bbb;
+  --blurred-text-rgb-color: 187, 187, 187;
+  --rev-blurred-text-color: #444;
+  --rev-blurred-text-rgb-color: 68, 68, 68;
+}
+
+h1 {
+  font-size: calc(3vw + 2rem);
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-list-title {
+  font-size: calc(1rem + 1vw + 3px);
+}
+
+.title-list {
+  margin-top: 0;
+}
+.title-list li {
+  padding: 5px 0;
+}
+.title-list li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: min(1.5vw + 1.3rem, 45px);
+  border-left: solid #d33682 3.3px;
+  border-bottom: solid #d33682 1.3px;
+  padding: 9px;
+  margin: 6rem 0 -1rem 0;
+  max-width: 100%;
+  font-family: "serif";
+}
+
+h3 {
+  font-size: min(1vw + 1rem, 33px);
+  border-bottom: solid #859900 1.3px;
+  padding: 9px;
+  margin: 3rem 0 1.5rem 0;
+  max-width: min(75%, 500px);
+  font-family: "serif";
+}
+
+p {
+  font-size: min(1rem + 0.35vw, 22px);
+  line-height: calc(1.8rem + 1.2vw);
+}
+
+.content-t-r-ul > li {
+  font-size: calc(1rem + 0.35vw);
+  line-height: calc(1.5rem + 1vw);
+}/*# sourceMappingURL=notebook.css.map */

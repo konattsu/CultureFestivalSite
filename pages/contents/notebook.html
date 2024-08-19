@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>部誌 | 数学部</title>
+    <link rel="stylesheet" href="./../../assets/css/main.css" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/header.css" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/move_top.css" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/md.css" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/notebook.css" class="css" />
+    <script src="./../../scripts/util/store_settings.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div class="all-wrapper">
+      <!-- ヘッダー begin -->
+      <div class="overlay" id="overlay"></div>
+      <header class="header show" id="header">
+        <button class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="menu" id="menu">
+          <ul class="nav-list">
+            <li><a href="https://math-club.net">ホーム</a></li>
+            <li>
+              <a href="https://math-club.net/pages/contents.html">コンテンツ</a>
+            </li>
+            <li>
+              <button class="settings-button" id="settings-button">more</button>
+            </li>
+            <ul class="change-settings" id="change-settings">
+              <button class="toggle-theme settings" id="toggle-theme">
+                theme
+              </button>
+              <button class="toggle-hand settings" id="toggle-hand">
+                mirror
+              </button>
+              <button class="toggle-up-arrow settings" id="toggle-up-arrow">
+                upArrow
+              </button>
+              <button class="copy-current-url settings" id="copy-current-url">
+                copyUrl
+              </button>
+            </ul>
+          </ul>
+        </nav>
+        <script src="./../../scripts/util/hamburger.js" defer></script>
+      </header>
+      <!-- ヘッダー end -->
+
+      <!-- topに戻る begin -->
+      <script src="./../../scripts/util/fetch_svg.js" defer></script>
+      <div class="svg"></div>
+      <svg class="up-arrow" id="up-arrow">
+        <use href="#up-arrow-svg-src"></use>
+      </svg>
+      <script src="./../../scripts/util/move_top.js" defer></script>
+      <!-- topに戻る end -->
+
+      <!-- メイン begin -->
+      <div class="main-content">
+        <h1>部誌</h1>
+        <p>
+          数学部の展示室
+          <span class="md-emphasis"> 4階 407室 </span
+          >で配布している部誌と同じ内容を掲載しています。
+          <span class="md-important">
+            作成者の許可なしにスクリーンショットなどを用いて保存を行うことを一切禁じます。
+          </span>
+        </p>
+
+        <!-- 各コンテンツに合わせてid微妙に変更 -->
+        <!-- タイトル一覧 begin -->
+        <p class="title-list-title">タイトル一覧 (クリック可)</p>
+        <ul class="title-list" id="title-list">
+          <li><a href="#content-collatz">80年以上未解決のコラッツ予想</a></li>
+          <li>
+            <a href="#content-bouble-radical">三重根の二重根号の外し方</a>
+          </li>
+          <li>
+            <a href="#content-trigonometric-ratio"
+              >様々な三角比の公式の証明方法</a
+            >
+          </li>
+          <li><a href="#content-4">hoge</a></li>
+          <li><a href="#content-5">hoge</a></li>
+        </ul>
+        <!-- タイトル一覧 end -->
+
+        <!-- コラッツ予想 begin -->
+        <div class="content" id="content-collatz">
+          <h2>80年以上未解決のコラッツ予想</h2>
+          <h3>コラッツ予想について</h3>
+          <p>
+            コラッツ予想とは「すべての正の整数において、奇数なら3倍し1を足す、偶数なら2で割る、
+            という操作を繰り返していくとどんな整数でも有限回数で1に到達する」という予想です。
+            また角谷の問題、ウラムの予想とも言われています。
+          </p>
+          <h3>具体例</h3>
+          <p>
+            一例として3を例にとります。3は奇数なので3倍して1を足すと10になります。10は偶数で2で割って5になります。5は奇数なので3倍して1を足し16になります。16は偶数で2で次々と4回割れるので1になります。この操作は以下のようになります。
+            <br />
+            3, 10, 5, 16, 8, 4, 2, 1
+          </p>
+          <h3>証明の進捗</h3>
+          <p>
+            現在までに2の68乗までの値が1に到達することが確かめられています。つまり、2の68乗以下の数字では1以外はどの数字も同じ数字に戻ることはなく(ループせず)、また限りなく大きくなっていくこともない、ということです。
+          </p>
+          <p>
+            ちなみに2021年には、日本企業の音圧爆上げくんが1億2000万円の懸賞金をかけました。<br />
+            皆様もぜひコラッツ予想について調べてみてください。
+          </p>
+        </div>
+        <!-- コラッツ予想 end -->
+        <!-- 三重根号 begin -->
+        <div class="content" id="content-bouble-radical">
+          <h2>三重根の二重根号の外し方</h2>
+          <h3>二重根の二重根号の外し方</h3>
+          <p>多重根号とかどやってかくんや......</p>
+        </div>
+        <!-- 三重根号 end -->
+        <!-- 三角比 begin -->
+        <div class="content" id="content-trigonometric-ratio">
+          <h2>様々な三角比の公式の証明方法</h2>
+          <h3>証明内容の確認</h3>
+          <ul class="content-t-r-ul">
+            <li>sin^2θ + cos^2θ = 1</li>
+            <li>tanθ = sinθ / cosθ</li>
+          </ul>
+          <p>いまからこれらを証明していく</p>
+          <h3>証明</h3>
+          <p>三角形ABCにおいて角ABCを90度、角ACBをθとおく。</p>
+          <p>
+            sinθ = AB/CA, cosθ = CB/CA<br />
+            ここから、
+          </p>
+        </div>
+        <!-- 三角比 end -->
+        <div class="content" id="content-4">content-4</div>
+        <div class="content" id="content-5">content-5</div>
+      </div>
+      <!-- メイン end -->
+    </div>
+  </body>
+  <script src="./../../scripts/util/grant_color_theme.js" defer></script>
+  <script src="./../../scripts/util/fetch_settings.js" defer></script>
+  <script src="./../../scripts/each_pages/notebook.js" defer></script>
+</html>

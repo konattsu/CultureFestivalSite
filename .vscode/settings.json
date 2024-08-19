@@ -7,5 +7,13 @@
         "editor.tabSize": 2
     },
 
-    "cSpell.words": ["polyline", "stylelint", "twbs"]
+    "cSpell.words": [
+        "cosθ",
+        "hoge",
+        "polyline",
+        "sinθ",
+        "stylelint",
+        "tanθ",
+        "twbs"
+    ]
 }

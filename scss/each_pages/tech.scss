@@ -1,0 +1,24 @@
+@use "./../../assets/css/theme";
+
+h1 {
+    font-size: calc(2vw + 2rem);
+    text-align: center;
+}
+
+h2 {
+    font-size: calc(1.5vw + 1.3rem);
+    border-left: solid #d33682 3.3px;
+    border-bottom: solid #d33682 1.3px;
+    max-width: 500px;
+    padding: 9px;
+    font-family: "serif";
+}
+
+p.brief {
+    font-size: calc(0.5vw + 1rem);
+}
+
+.dummy-url {
+    text-decoration: underline;
+    color: var(--text-color);
+}
