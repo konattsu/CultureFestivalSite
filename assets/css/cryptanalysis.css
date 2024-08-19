@@ -54,6 +54,9 @@ h2 {
   grid-template-rows: auto calc(6vh + 25px);
   grid-template-columns: min(50%, 300px) 1fr;
   gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .question {
@@ -141,6 +144,9 @@ h2 {
 .cipher-result-after {
   white-space: pre;
   overflow: scroll;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+          user-select: all;
 }
 
 table.cipher {

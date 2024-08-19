@@ -32,6 +32,7 @@ h2 {
     grid-template-rows: auto calc(6vh + 25px);
     grid-template-columns: calc(min(50%, 300px)) 1fr;
     gap: 10px;
+    user-select: none;
 }
 
 .question {
@@ -109,6 +110,7 @@ h2 {
 .cipher-result-after {
     white-space: pre;
     overflow: scroll;
+    user-select: all;
 }
 
 table.cipher {
