@@ -6,7 +6,7 @@ h1 {
 }
 
 p.top-notice {
-    font-size: calc(1vw + 1.3rem);
+    font-size: calc(1vw + 1rem);
 }
 
 p {
@@ -75,6 +75,18 @@ h2 {
     background-color: var(--background-color);
     color: var(--text-color);
     border: solid 2px #cb4b16;
+    @media (min-width: 300px) {
+        font-size: 13px;
+    }
+    @media (min-width: 600px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 15px;
+    }
+    @media (min-width: 1400px) {
+        font-size: 16px;
+    }
 }
 
 .cipher-result-before {
