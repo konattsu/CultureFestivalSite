@@ -10,6 +10,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 1rem;
+    padding: 5vw;
     padding-top: 70px;
     padding-bottom: 120px;
     max-width: 950px;
@@ -17,19 +18,15 @@
     // bodyにdisplay: flexと迷ったけどとりあえずこっち
     margin: auto;
     width: auto;
-
-    // border: dotted 3px greenyellow;
 }
 
 body {
     margin: 0;
     background-color: var(--rev-blurred-text-color);
-
-    // border: dotted 3px skyblue;
 }
 
 * {
-    font-family: "UD デジタル 教科書体 NP-B", "gothic";
+    font-family: "UD デジタル 教科書体 N-B", sans-serif;
 }
 
 p {

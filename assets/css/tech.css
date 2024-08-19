@@ -32,7 +32,7 @@ h2 {
   font-size: calc(1.5vw + 1.3rem);
   max-width: 500px;
   padding: 9px;
-  font-family: "serif";
+  font-family: serif;
 }
 
 p.brief {

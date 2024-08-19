@@ -33,6 +33,7 @@
   color: var(--text-color);
   margin: 0;
   padding: 1rem;
+  padding: 5vw;
   padding-top: 70px;
   padding-bottom: 120px;
   max-width: 950px;
@@ -46,7 +47,7 @@ body {
 }
 
 * {
-  font-family: "UD デジタル 教科書体 NP-B", "gothic";
+  font-family: "UD デジタル 教科書体 N-B", sans-serif;
 }
 
 p {
