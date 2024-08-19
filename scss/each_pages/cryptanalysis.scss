@@ -5,6 +5,10 @@ h1 {
     text-align: center;
 }
 
+p.top-notice {
+    font-size: calc(1vw + 1.3rem);
+}
+
 p {
     &::after {
         content: "";
@@ -34,6 +38,8 @@ h2 {
     position: sticky;
     top: 10%;
     height: 15%;
+    font-size: 120%;
+    line-height: 2rem;
 }
 
 .cipher-operation-wrapper {
@@ -62,6 +68,13 @@ h2 {
 .cipher-cls {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+}
+
+.cipher-del,
+.cipher-cls {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: solid 2px #cb4b16;
 }
 
 .cipher-result-before {
