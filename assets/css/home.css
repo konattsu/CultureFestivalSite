@@ -21,8 +21,6 @@ h1 {
 
 h2 {
   font-size: calc(1.5vw + 1.3rem);
-  border-left: solid #d33682 3.3px;
-  border-bottom: solid #d33682 1.3px;
   max-width: 500px;
   padding: 9px;
   font-family: "serif";
