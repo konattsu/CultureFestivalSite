@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>メロス | 数学部</title>
-    <link rel="stylesheet" href="./../../assets/css/main.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/header.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/move_top.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/md.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/melos.css" class="css" />
-    <script src="./../../scripts/util/store_settings.js"></script>
+    <link rel="icon" href="./../../favicon.svg?ver=0.1.0" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" href="./../../assets/css/main.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/header.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/move_top.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/md.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/melos.css?ver=0.1.0" class="css" />
+    <script src="./../../scripts/util/store_settings.js?ver=0.1.0"></script>
   </head>
 
   <body class="body" id="body">
@@ -32,32 +33,24 @@
               <button class="settings-button" id="settings-button">more</button>
             </li>
             <ul class="change-settings" id="change-settings">
-              <button class="toggle-theme settings" id="toggle-theme">
-                theme
-              </button>
-              <button class="toggle-hand settings" id="toggle-hand">
-                mirror
-              </button>
-              <button class="toggle-up-arrow settings" id="toggle-up-arrow">
-                upArrow
-              </button>
-              <button class="copy-current-url settings" id="copy-current-url">
-                copyUrl
-              </button>
+              <button class="toggle-theme settings" id="toggle-theme">theme</button>
+              <button class="toggle-hand settings" id="toggle-hand">mirror</button>
+              <button class="toggle-up-arrow settings" id="toggle-up-arrow">upArrow</button>
+              <button class="copy-current-url settings" id="copy-current-url">copyUrl</button>
             </ul>
           </ul>
         </nav>
-        <script src="./../../scripts/util/hamburger.js" defer></script>
+        <script src="./../../scripts/util/hamburger.js?ver=0.1.0" defer></script>
       </header>
       <!-- ヘッダー end -->
 
       <!-- topに戻る begin -->
-      <script src="./../../scripts/util/fetch_svg.js" defer></script>
+      <script src="./../../scripts/util/fetch_svg.js?ver=0.1.0" defer></script>
       <div class="svg"></div>
       <svg class="up-arrow" id="up-arrow">
         <use href="#up-arrow-svg-src"></use>
       </svg>
-      <script src="./../../scripts/util/move_top.js" defer></script>
+      <script src="./../../scripts/util/move_top.js?ver=0.1.0" defer></script>
       <!-- topに戻る end -->
 
       <!-- メイン begin -->
@@ -71,14 +64,11 @@
         <h2>メロスの定義</h2>
         <p>
           「沈みゆく太陽の速度の10倍の速度で走った」という表現から考察していきます。国語科であれば「メロス」の心情を読み取り定義するのでしょうが、数学部ですのでそのような高度な技は使えません。<br />
-          ですので、沈みゆく太陽の速さを算出しこれを10倍にしたものを 1[メロス]
-          と定義します。<br />
+          ですので、沈みゆく太陽の速さを算出しこれを10倍にしたものを 1[メロス] と定義します。<br />
           地球を球とみなし、メロスがいる場所はイタリアのシチリア島なので北緯37度、赤道の長さを40000kmとします。
         </p>
         <p>
-          <br /><span class="formulas"
-            >赤道 : 北緯37度地点での緯線の長さ = 1 : cos(37deg)</span
-          >
+          <br /><span class="formulas">赤道 : 北緯37度地点での緯線の長さ = 1 : cos(37deg)</span>
           <br />なので 北緯37度地点での緯線の長さは<br />
           <span class="formulas"> 40000km x 0.799 = 31960km </span>
           <br />このときの、自転の速さは<br />
@@ -118,34 +108,13 @@
           </div>
           <div class="generator">
             <label for="km-h">km/h</label>
-            <input
-              type="range"
-              id="km-h"
-              name="km-h"
-              min="0"
-              max="36000000"
-              step="0.0001"
-            />
+            <input type="range" id="km-h" name="km-h" min="0" max="36000000" step="0.0001" />
             <input type="number" id="km-h-output" value="0" readonly />
             <label for="m-s">m/s</label>
-            <input
-              type="range"
-              id="m-s"
-              name="m-s"
-              min="0"
-              max="10000000"
-              step="0.0001"
-            />
+            <input type="range" id="m-s" name="m-s" min="0" max="10000000" step="0.0001" />
             <input type="number" id="m-s-output" value="0" readonly />
             <label for="melos">melos</label>
-            <input
-              type="range"
-              id="melos"
-              class="melos"
-              min="0"
-              max="2702"
-              step="0.0000001"
-            />
+            <input type="range" id="melos" class="melos" min="0" max="2702" step="0.0000001" />
             <input type="number" id="melos-output" value="0" readonly />
           </div>
         </form>
@@ -154,13 +123,9 @@
           上の2つはkm/hの最大値を指定します。baseが基数、powが指数です。100km/hを最大値にしたいときは
           10^2 = 100 なので、baseを10、powを2にします。
         </p>
-        <p>
-          下の3つはそれぞれ連動して動作します。範囲は0から先ほど定義した最大値までです。
-        </p>
+        <p>下の3つはそれぞれ連動して動作します。範囲は0から先ほど定義した最大値までです。</p>
         <h3>様々な速さ</h3>
-        <p>
-          日常でよく見る物体の速さを調べてみました。ぜひ単位を[メロス]に変換してみてください。
-        </p>
+        <p>日常でよく見る物体の速さを調べてみました。ぜひ単位を[メロス]に変換してみてください。</p>
         <table class="speed-table">
           <thead>
             <tr>
@@ -246,7 +211,7 @@
       <!-- メイン end -->
     </div>
   </body>
-  <script src="./../../scripts/util/grant_color_theme.js" defer></script>
-  <script src="./../../scripts/util/fetch_settings.js" defer></script>
-  <script src="./../../scripts/each_pages/melos.js" defer></script>
+  <script src="./../../scripts/util/grant_color_theme.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/util/fetch_settings.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/each_pages/melos.js?ver=0.1.0" defer></script>
 </html>

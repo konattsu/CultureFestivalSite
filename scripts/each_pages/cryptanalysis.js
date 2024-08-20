@@ -13,12 +13,8 @@ function sortTable(columnIndex) {
     });
 
     const sortedRows = rows.sort((a, b) => {
-        const aText = a
-            .querySelectorAll("th, td")
-            [columnIndex].textContent.trim();
-        const bText = b
-            .querySelectorAll("th, td")
-            [columnIndex].textContent.trim();
+        const aText = a.querySelectorAll("th, td")[columnIndex].textContent.trim();
+        const bText = b.querySelectorAll("th, td")[columnIndex].textContent.trim();
         return aText.localeCompare(bText, "en");
     });
 

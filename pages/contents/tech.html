@@ -1,18 +1,16 @@
-<!-- ! パス注意 -->
-<!-- ! 別ファイル参照は live server が動かんくなったのでコピーするように -->
-
 <!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>使用技術等 - 数学部</title>
-    <link rel="stylesheet" href="./../../assets/css/main.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/header.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/move_top.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/md.css" class="css" />
-    <link rel="stylesheet" href="./../../assets/css/tech.css" class="css" />
-    <script src="./../../scripts/util/store_settings.js"></script>
+    <link rel="icon" href="./../../favicon.svg?ver=0.1.0" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" href="./../../assets/css/main.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/header.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/move_top.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/md.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/tech.css?ver=0.1.0" class="css" />
+    <script src="./../../scripts/util/store_settings.js?ver=0.1.0"></script>
   </head>
 
   <body class="body" id="body">
@@ -35,32 +33,24 @@
               <button class="settings-button" id="settings-button">more</button>
             </li>
             <ul class="change-settings" id="change-settings">
-              <button class="toggle-theme settings" id="toggle-theme">
-                theme
-              </button>
-              <button class="toggle-hand settings" id="toggle-hand">
-                mirror
-              </button>
-              <button class="toggle-up-arrow settings" id="toggle-up-arrow">
-                upArrow
-              </button>
-              <button class="copy-current-url settings" id="copy-current-url">
-                copyUrl
-              </button>
+              <button class="toggle-theme settings" id="toggle-theme">theme</button>
+              <button class="toggle-hand settings" id="toggle-hand">mirror</button>
+              <button class="toggle-up-arrow settings" id="toggle-up-arrow">upArrow</button>
+              <button class="copy-current-url settings" id="copy-current-url">copyUrl</button>
             </ul>
           </ul>
         </nav>
-        <script src="./../../scripts/util/hamburger.js" defer></script>
+        <script src="./../../scripts/util/hamburger.js?ver=0.1.0" defer></script>
       </header>
       <!-- ヘッダー end -->
 
       <!-- topに戻る begin -->
-      <script src="./../../scripts/util/fetch_svg.js" defer></script>
+      <script src="./../../scripts/util/fetch_svg.js?ver=0.1.0" defer></script>
       <div class="svg"></div>
       <svg class="up-arrow" id="up-arrow">
         <use href="#up-arrow-svg-src"></use>
       </svg>
-      <script src="./../../scripts/util/move_top.js" defer></script>
+      <script src="./../../scripts/util/move_top.js?ver=0.1.0" defer></script>
       <!-- topに戻る end -->
 
       <!-- メイン begin -->
@@ -79,6 +69,7 @@
           Pagesにカスタムドメインを適用しています。ドメインは別サービスで購入しました。当初はサーバーも借りる予定でしたが、Github
           Pagesの帯域幅が月100GBあり利用規約も大丈夫そうだったので使うことにしました。デプロイも楽なのでこっちにしてよかったです。
         </p>
+        <p>一応帯域幅を超過しないようにwebp</p>
 
         <h2>ローカルストレージ</h2>
         <p>
@@ -98,14 +89,13 @@
           他のコンテンツを全て捨てればバックエンドは終わらせられたのですが、
           「フロントエンド側で使用する言語を全く触ったことが無いので開発の目途が立たない」、
           「他のコンテンツが無いとこのサイトの意義が薄れる」などの理由から開発を諦めました。
-          <br />正直かなり悔しいです....
-          もし来年実装していたら是非遊んでください。
+          <br />正直かなり悔しいです.... もし来年実装していたら是非遊んでください。
         </p>
       </div>
 
       <!-- メイン end -->
     </div>
   </body>
-  <script src="./../../scripts/util/grant_color_theme.js" defer></script>
-  <script src="./../../scripts/util/fetch_settings.js" defer></script>
+  <script src="./../../scripts/util/grant_color_theme.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/util/fetch_settings.js?ver=0.1.0" defer></script>
 </html>
