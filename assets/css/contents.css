@@ -92,4 +92,12 @@ h1 {
 .tech-svg-b {
   stroke: var(--rev-text-color);
   fill: var(--text-color);
+}
+
+.melos-svg-a {
+  stroke: var(--text-color);
+}
+
+.white-svg-a {
+  stroke: var(--text-color);
 }/*# sourceMappingURL=contents.css.map */

@@ -68,8 +68,8 @@
           地球を球とみなし、メロスがいる場所はイタリアのシチリア島なので北緯37度、赤道の長さを40000kmとします。
         </p>
         <p>
-          <br /><span class="formulas">赤道 : 北緯37度地点での緯線の長さ = 1 : cos(37deg)</span>
-          <br />なので 北緯37度地点での緯線の長さは<br />
+          <br /><span class="formulas">赤道 : 北緯37度地点での緯線の長さ = 1 : cos(37deg)</span> <br />なので
+          北緯37度地点での緯線の長さは<br />
           <span class="formulas"> 40000km x 0.799 = 31960km </span>
           <br />このときの、自転の速さは<br />
           <span class="formulas"> 31960km / 24h = 1332km/h </span>
@@ -84,26 +84,10 @@
         <form class="melos-generator">
           <div class="max-def">
             <label for="max-km-h">max km/h base</label>
-            <input
-              type="range"
-              id="max-km-h"
-              class="output"
-              name="max-km-h"
-              min="1"
-              max="10"
-              step="1"
-            />
+            <input type="range" id="max-km-h" class="output" name="max-km-h" min="1" max="10" step="1" />
             <input type="number" id="max-km-h-output" value="1" readonly />
             <label for="max-km-h">max km/h pow</label>
-            <input
-              type="range"
-              id="max-pow-km-h"
-              class="output"
-              name="max-pow-km-h"
-              min="1"
-              max="10"
-              step="1"
-            />
+            <input type="range" id="max-pow-km-h" class="output" name="max-pow-km-h" min="1" max="10" step="1" />
             <input type="number" id="max-pow-km-h-output" value="1" readonly />
           </div>
           <div class="generator">
@@ -120,8 +104,8 @@
         </form>
         <h3>使い方</h3>
         <p>
-          上の2つはkm/hの最大値を指定します。baseが基数、powが指数です。100km/hを最大値にしたいときは
-          10^2 = 100 なので、baseを10、powを2にします。
+          上の2つはkm/hの最大値を指定します。baseが基数、powが指数です。100km/hを最大値にしたいときは 10^2 = 100
+          なので、baseを10、powを2にします。
         </p>
         <p>下の3つはそれぞれ連動して動作します。範囲は0から先ほど定義した最大値までです。</p>
         <h3>様々な速さ</h3>
