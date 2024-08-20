@@ -20,3 +20,8 @@ p.brief {
     text-decoration: underline;
     color: var(--text-color);
 }
+
+p > a {
+    color: var(--text-color);
+    text-decoration: underline #268bd2;
+}

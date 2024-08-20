@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>白</title>
+    <link rel="icon" href="./../../favicon.svg?ver=0.1.0" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" href="./../../assets/css/main.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/header.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/move_top.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/md.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/white.css?ver=0.1.0" class="css" />
+
+    <script src="./../../scripts/util/store_settings.js?ver=0.1.0"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div class="all-wrapper">
+      <!-- ヘッダー begin -->
+      <div class="overlay" id="overlay"></div>
+      <header class="header show" id="header">
+        <button class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="menu" id="menu">
+          <ul class="nav-list">
+            <li><a href="https://math-club.net">ホーム</a></li>
+            <li>
+              <a href="https://math-club.net/pages/contents.html">コンテンツ</a>
+            </li>
+            <li>
+              <button class="settings-button" id="settings-button">more</button>
+            </li>
+            <ul class="change-settings" id="change-settings">
+              <button class="toggle-theme settings" id="toggle-theme">theme</button>
+              <button class="toggle-hand settings" id="toggle-hand">mirror</button>
+              <button class="toggle-up-arrow settings" id="toggle-up-arrow">upArrow</button>
+              <button class="copy-current-url settings" id="copy-current-url">copyUrl</button>
+            </ul>
+          </ul>
+        </nav>
+        <script src="./../../scripts/util/hamburger.js?ver=0.1.0" defer></script>
+      </header>
+      <!-- ヘッダー end -->
+
+      <!-- topに戻る begin -->
+      <script src="./../../scripts/util/fetch_svg.js?ver=0.1.0" defer></script>
+      <div class="svg"></div>
+      <svg class="up-arrow" id="up-arrow">
+        <use href="#up-arrow-svg-src"></use>
+      </svg>
+      <script src="./../../scripts/util/move_top.js?ver=0.1.0" defer></script>
+      <!-- topに戻る end -->
+
+      <!-- メイン begin -->
+      <div class="main-content">
+        <h1>圧縮された白</h1>
+        <h2>白色</h2>
+        <p>
+          「白色」と聞いて一般的に思い浮かべるのは何でしょうか？「雲の色」、「消しゴムの色」など人により様々な意見が挙がると思います。<br />
+          しかし、同じ単語の「白色」でも微妙に色合いが異なるはずです。タレントの某ミカさんの発言「白って200色あんねん」にあるように、「白色」の中でも更に色を分割できます。この状況に対し、人類は危機を感じるべきです。
+        </p>
+        <p>
+          皆さんは周りにいる友人や家族に話しかける際「ねぇ、人間」と話しかけますか?
+          もちろん答えはNo。顔が似ていたとて、相手の名前を呼ぶでしょう。こんなこと許されるはずがありません。「多様性」の時代、平等に扱うのが正しい対応ではないでしょうか?
+        </p>
+        <p>そこで「白色」に見える色の範囲を決め、200個に分割し、ランダムに選ばれた1色に名前を付けて頂きます。</p>
+
+        <h2>RGB</h2>
+        <p>色の表し方にはいくつか種類があります。まずは、「RGB」について話します。</p>
+        <p>
+          RGBとは赤(Red)、緑(Green)、青(Blue)の3色をそれぞれ 0 から 255 の組み合わせて表現します。パターンは 256^3
+          で、約1677万色にのぼります。<br />例えば[255, 255,
+          0]の組み合わせだと黄色です。16進数を用いて#ffff00と表現したりもします。
+        </p>
+        <p>
+          以下のツールで確認できます。自由に操作してみてください。0xという接頭語は16進数であることを明示しています。
+        </p>
+        <div class="rbg-experience">
+          <label for="red">赤: <span id="red-value">00</span></label>
+          <input type="range" id="red" min="0" max="255" value="0" step="1" />
+
+          <label for="green">緑: <span id="green-value">00</span></label>
+          <input type="range" id="green" min="0" max="255" value="0" step="1" />
+
+          <label for="blue">青: <span id="blue-value">00</span></label>
+          <input type="range" id="blue" min="0" max="255" value="0" step="1" />
+
+          <div class="color-preview" id="color-preview"></div>
+        </div>
+        <p>あ</p>
+      </div>
+      <!-- メイン end -->
+    </div>
+  </body>
+  <script src="./../../scripts/util/grant_color_theme.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/util/fetch_settings.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/each_pages/white/experience.js?ver=0.1.0" defer></script>
+</html>
