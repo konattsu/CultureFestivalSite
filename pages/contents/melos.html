@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./../../assets/css/header.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/move_top.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/md.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/range_visibility.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/melos.css?ver=0.1.0" class="css" />
     <script src="./../../scripts/util/store_settings.js?ver=0.1.0"></script>
   </head>
@@ -84,110 +85,140 @@
         <form class="melos-generator">
           <div class="max-def">
             <label for="max-km-h">max km/h base</label>
-            <input type="range" id="max-km-h" class="output" name="max-km-h" min="1" max="10" step="1" />
-            <input type="number" id="max-km-h-output" value="1" readonly />
+            <input
+              type="range"
+              class="range-visibility"
+              id="max-km-h"
+              name="max-km-h"
+              min="1"
+              max="10"
+              value="1"
+              step="1"
+            />
+            <input type="number" class="output" id="max-km-h-output" value="1" readonly />
             <label for="max-km-h">max km/h pow</label>
-            <input type="range" id="max-pow-km-h" class="output" name="max-pow-km-h" min="1" max="10" step="1" />
-            <input type="number" id="max-pow-km-h-output" value="1" readonly />
+            <input
+              type="range"
+              class="range-visibility"
+              id="max-pow-km-h"
+              name="max-pow-km-h"
+              min="1"
+              max="10"
+              value="1"
+              step="1"
+            />
+            <input type="number" class="output" id="max-pow-km-h-output" value="1" readonly />
           </div>
           <div class="generator">
-            <label for="km-h">km/h</label>
-            <input type="range" id="km-h" name="km-h" min="0" max="36000000" step="0.0001" />
-            <input type="number" id="km-h-output" value="0" readonly />
-            <label for="m-s">m/s</label>
-            <input type="range" id="m-s" name="m-s" min="0" max="10000000" step="0.0001" />
-            <input type="number" id="m-s-output" value="0" readonly />
-            <label for="melos">melos</label>
-            <input type="range" id="melos" class="melos" min="0" max="2702" step="0.0000001" />
-            <input type="number" id="melos-output" value="0" readonly />
+            <input
+              type="range"
+              class="range-visibility range"
+              id="km-h"
+              value="0"
+              name="km-h"
+              min="0"
+              max="1"
+              step="0.0001"
+            />
+            <label for="km-h" class="display">km/h</label>
+            <input type="number" class="display output" id="km-h-output" value="0" readonly />
+            <label for="m-s" class="display">m/s</label>
+            <input type="number" class="display output" id="m-s-output" value="0" readonly />
+            <label for="melos" class="display">melos</label>
+            <input type="number" class="display output" id="melos-output" value="0" readonly />
           </div>
         </form>
         <h3>使い方</h3>
         <p>
-          上の2つはkm/hの最大値を指定します。baseが基数、powが指数です。100km/hを最大値にしたいときは 10^2 = 100
-          なので、baseを10、powを2にします。
+          2つの赤色スライダーは[km/h]の最大値を指定します。baseが基数、powが指数です。100km/hを最大値にしたいときは 10^2
+          = 100 なので、baseを10、powを2にします。
         </p>
-        <p>下の3つはそれぞれ連動して動作します。範囲は0から先ほど定義した最大値までです。</p>
+        <p>青色のスライダーで単位の相互変換が行えます。範囲は0から先ほど設定した最大値までです。</p>
         <h3>様々な速さ</h3>
-        <p>日常でよく見る物体の速さを調べてみました。ぜひ単位を[メロス]に変換してみてください。</p>
+        <p>日常でよく見る物体の速さを調べてみました。今日から[メロス]を単位として使っていきましょう!</p>
         <table class="speed-table">
           <thead>
             <tr>
               <th>物体/状態</th>
-              <th>速さ[km/h]</th>
-              <th>おおよその値</th>
+              <th>[km/h]</th>
+              <th>[melos]</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>歩き</th>
               <td>4</td>
-              <td>2^2</td>
+              <td>0.0003</td>
             </tr>
             <tr>
               <th>走り</th>
               <td>12</td>
-              <td>4^2</td>
+              <td>0.0009</td>
             </tr>
             <tr>
               <th>自転車</th>
               <td>20</td>
-              <td>5^2</td>
+              <td>0.0015</td>
             </tr>
             <tr>
               <th>車</th>
               <td>60</td>
-              <td>8^2</td>
+              <td>0.0045</td>
             </tr>
             <tr>
               <th>電車</th>
               <td>120</td>
-              <td>5^3</td>
+              <td>0.009</td>
             </tr>
             <tr>
               <th>大谷翔平</th>
               <td>160</td>
-              <td>3^5</td>
+              <td>0.012</td>
             </tr>
             <tr>
               <th>新幹線</th>
               <td>300</td>
-              <td>7^3</td>
+              <td>0.023</td>
             </tr>
             <tr>
               <th>リニア</th>
               <td>500</td>
-              <td>8^3</td>
+              <td>0.038</td>
             </tr>
             <tr>
               <th>飛行機(普通)</th>
               <td>900</td>
-              <td>10^3</td>
+              <td>0.068</td>
             </tr>
             <tr>
               <th>音速</th>
               <td>1220</td>
-              <td>2^10</td>
+              <td>0.091</td>
             </tr>
             <tr>
               <th>飛行機(最速)</th>
               <td>2180</td>
-              <td>3^7</td>
+              <td>0.164</td>
             </tr>
             <tr>
               <th>第一宇宙速度</th>
               <td>28800</td>
-              <td>8^5</td>
+              <td>2.162</td>
             </tr>
             <tr>
               <th>第二宇宙速度</th>
               <td>40300</td>
-              <td>6^6</td>
+              <td>3.026</td>
             </tr>
             <tr>
               <th>第三宇宙速度</th>
               <td>60100</td>
-              <td>9^5</td>
+              <td>4.512</td>
+            </tr>
+            <tr>
+              <th>光</th>
+              <td>10億7900万</td>
+              <td>78754</td>
             </tr>
           </tbody>
         </table>

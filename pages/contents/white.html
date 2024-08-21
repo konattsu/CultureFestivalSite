@@ -3,16 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>白</title>
+    <title>白 | 数学部</title>
     <link rel="icon" href="./../../favicon.svg?ver=0.1.0" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" href="./../../assets/css/main.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/header.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/move_top.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/md.css?ver=0.1.0" class="css" />
+    <link rel="stylesheet" href="./../../assets/css/range_visibility.css?ver=0.1.0" class="css" />
     <link rel="stylesheet" href="./../../assets/css/white.css?ver=0.1.0" class="css" />
-
     <script src="./../../scripts/util/store_settings.js?ver=0.1.0"></script>
   </head>
+
+  <!-- SVG置き場 begin -->
+  <svg>
+    <!-- HSV横から begin -->
+    <symbol id="hsv-ls-svg-src" viewBox="0 0 100 100">
+      <rect class="hsv-ls-svg-a" x="0" y="0" width="100" height="100" />
+      <!-- 基本の形 -->
+      <ellipse class="hsv-ls-svg-b" cx="50" cy="30" rx="40" ry="10" fill="none" stroke-width="2" />
+      <polyline class="hsv-ls-svg-b" points="10,31 50,90 90,31" fill="none" stroke-width="2" stroke-linecap="round" />
+      <!-- S -->
+      <line class="hsv-ls-svg-b" x1="50" y1="91" x2="95" y2="91" stroke-linecap="round" />
+      <polygon class="hsv-ls-svg-c" points="95,91 93,89, 93,93" />
+      <text class="hsv-ls-svg-d" x="90" y="87" font-family="sans-serif" font-size="10">S</text>
+      <!-- H -->
+      <line class="hsv-ls-svg-b" x1="50" y1="91" x2="85" y2="65" stroke-linecap="round" />
+      <text class="hsv-ls-svg-d" x="68" y="88" font-family="sans-serif" font-size="10">H</text>
+      <polygon class="hsv-ls-svg-c" points="63,82 61.5,85 65.5,83" />
+      <rect class="hsv-ls-svg-d" x="63.7" y="88" width="1" height="3" fill="#fff" />
+      <line class="hsv-ls-svg-b" x1="63.5" y1="84" x2="64" y2="86.5" stroke-width="1" />
+      <!-- V -->
+      <line class="hsv-ls-svg-b" x1="50" y1="91" x2="50" y2="10" stroke-width="1" stroke-linecap="round" />
+      <polygon class="hsv-ls-svg-c" points="50,10 52,12 48,12" />
+      <text class="hsv-ls-svg-d" x="38" y="15" font-family="sans-serif" font-size="10">V</text>
+    </symbol>
+    <!-- HSV横から end-->
+    <!-- HSV真上から begin -->
+    <symbol id="hsv-top-svg-src" viewBox="0 0 100 100">
+      <defs>
+        <!-- 真ん中の白 -->
+        <radialGradient id="hsv-top-svg-white" cx="50%" cy="50%" r="30%">
+          <stop offset="0%" style="stop-color: #fff; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #fff; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 右 赤 -->
+        <radialGradient id="hsv-top-svg-red" cx="100%" cy="50%" r="70%">
+          <stop offset="0%" style="stop-color: #f00; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #f55; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 右上 黄 -->
+        <radialGradient id="hsv-top-svg-yellow" cx="75%" cy="13%" r="70%">
+          <stop offset="0%" style="stop-color: #ff0; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #ff5; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 左上 緑 -->
+        <radialGradient id="hsv-top-svg-green" cx="25%" cy="13%" r="70%">
+          <stop offset="0%" style="stop-color: #0f0; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #5f5; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 左 水色 -->
+        <radialGradient id="hsv-top-svg-light-blue" cx="0%" cy="50%" r="70%">
+          <stop offset="0%" style="stop-color: #0ff; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #5ff; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 左下 青 -->
+        <radialGradient id="hsv-top-svg-blue" cx="25%" cy="87%" r="70%">
+          <stop offset="0%" style="stop-color: #00f; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #55f; stop-opacity: 0" />
+        </radialGradient>
+        <!-- 右下 紫 -->
+        <radialGradient id="hsv-top-svg-violet" cx="75%" cy="87%" r="70%">
+          <stop offset="0%" style="stop-color: #f0f; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #f5f; stop-opacity: 0" />
+        </radialGradient>
+        <!-- HSV真上から end -->
+      </defs>
+      <!-- カラフルなやつ -->
+      <rect class="hsv-top-svg-a" x="0" y="0" width="100" height="100" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-red)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-yellow)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-green)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-light-blue)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-blue)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-violet)" opacity="1" />
+      <circle cx="50%" cy="50%" r="50%" fill="url(#hsv-top-svg-white)" opacity="0.5" />
+      <!-- 説明 -->
+      <!-- 基本の線 -->
+      <circle cx="50%" cy="50%" r="3" fill="#000" />
+      <line x1="50" y1="50" x2="100" y2="50" stroke="#000" stroke-width="1" />
+      <!-- V -->
+      <text x="40" y="60" font-family="sans-serif" font-size="10" fill="#000">V</text>
+      <!-- 基準角 -->
+      <line x1="50" y1="50" x2="75.5" y2="7" stroke="#000" />
+      <!-- H -->
+      <text x="60" y="45" font-family="sans-serif" font-size="10" fill="#000">H</text>
+      <line x1="60" y1="50" x2="59" y2="47" stroke="#000" />
+      <line x1="58" y1="45" x2="55" y2="42" stroke="#000" />
+      <!-- S -->
+      <text x="60" y="15" font-family="sans-serif" font-size="10" fill="#000">S</text>
+      <polygon points="75.5,7 73.5,7.6 76,9" stroke="#000" fill="#000" />
+    </symbol>
+  </svg>
+  <!-- SVG置き場 end -->
 
   <body class="body" id="body">
     <div class="all-wrapper">
@@ -56,7 +148,7 @@
 
       <!-- メイン begin -->
       <div class="main-content">
-        <h1>圧縮された白</h1>
+        <h1>白色</h1>
         <h2>白色</h2>
         <p>
           「白色」と聞いて一般的に思い浮かべるのは何でしょうか？「雲の色」、「消しゴムの色」など人により様々な意見が挙がると思います。<br />
@@ -71,31 +163,80 @@
         <h2>RGB</h2>
         <p>色の表し方にはいくつか種類があります。まずは、「RGB」について話します。</p>
         <p>
-          RGBとは赤(Red)、緑(Green)、青(Blue)の3色をそれぞれ 0 から 255 の組み合わせて表現します。パターンは 256^3
-          で、約1677万色にのぼります。<br />例えば[255, 255,
+          RGB(RGBカラーモデル)とは赤-Red、緑-Green、青-Blueの3色をそれぞれ 0 から 255
+          の組み合わせて表現します。パターンは 256^3 で、約1677万色にのぼります。<br />例えば[255, 255,
           0]の組み合わせだと黄色です。16進数を用いて#ffff00と表現したりもします。
         </p>
         <p>
           以下のツールで確認できます。自由に操作してみてください。0xという接頭語は16進数であることを明示しています。
         </p>
         <div class="rbg-experience">
-          <label for="red">赤: <span id="red-value">00</span></label>
-          <input type="range" id="red" min="0" max="255" value="0" step="1" />
-
-          <label for="green">緑: <span id="green-value">00</span></label>
-          <input type="range" id="green" min="0" max="255" value="0" step="1" />
-
-          <label for="blue">青: <span id="blue-value">00</span></label>
-          <input type="range" id="blue" min="0" max="255" value="0" step="1" />
-
-          <div class="color-preview" id="color-preview"></div>
+          <label for="red">赤 <span id="red-value">00</span></label>
+          <input type="range" class="red range-visibility" id="red" min="0" max="255" value="0" step="1" />
+          <label for="green">緑 <span id="green-value">00</span></label>
+          <input type="range" class="green range-visibility" id="green" min="0" max="255" value="0" step="1" />
+          <label for="blue">青 <span id="blue-value">00</span></label>
+          <input type="range" class="blue range-visibility" id="blue" min="0" max="255" value="0" step="1" />
+          <div class="color-preview" id="color-preview-rgb"></div>
         </div>
-        <p>あ</p>
+        <p>光の足し算なので、全て 0 → 黒色 , 全て255 → 白色 です。(厳密には違うかもしれませんがイメージはこれです。)</p>
+        <p>この方法を使用して「白色」を定義してもいいですが、より直感的に定義できる方法があるのでそちらを試します。</p>
+        <h2>HSV</h2>
+        <p>
+          次はHSV(HSB)色空間についてです。3次元を基にして人間が色を知覚する方法に類似するように作成された考え方です。3次元空間で考えるため理解するのが少し難しいです。
+        </p>
+        <div class="hsv-description">
+          <div class="hsv-svg-wrapper">
+            <svg class="hsv-ls hsv">
+              <use href="#hsv-ls-svg-src"></use>
+            </svg>
+            <svg class="hsv-top hsv">
+              <use href="#hsv-top-svg-src"></use>
+            </svg>
+          </div>
+          <p>
+            (本来であれば右側の円周付近は濃く、中心は真っ白。参考程度にしてください。また、左側を[1]、右側を[2]と表現します。)
+          </p>
+          <p>
+            まず H-色相 S-彩度
+            V(B)-明度です。[1]は横から、[2]は真上から見た様子です。[1]の色は付けていません。そして、この円錐の中に点をとり色を決めます。詳細を話していきます。
+          </p>
+          <h3>H-色相</h3>
+          <p>
+            0-360°を取り、[2]のように色の種類を表しています。Hは角度で, 0°赤, 120°緑,
+            240°青です。例えばHが60°(黄)のとき、S,Vの値が何に変化しても青や緑など別の色に変わることはありません。但し、白,黒にはなる可能性があります。
+          </p>
+          <h3>S-彩度</h3>
+          <p>
+            0-1[0-100%]を取り、色の鮮やかさを表します。この値が大きくなると色が鮮やかになります。[1]で考えたとき、高さ(V)の値が小さくなれば同じSの値でも中心(V軸)からの距離が短くなります。また、Sが0のとき、グレースケール、モノクロと呼ばれたりします。
+          </p>
+          <h3>V(B)-光度</h3>
+          <p>
+            0-1[0-100%]を取り、色の明るさを表します。[1]に着色したとき頂点は真っ黒、底面の中心は真っ白になります。また、Vが0のとき、Sは必ず0で、Hは0-360の値を取れますが、必ず真っ黒になります。
+          </p>
+        </div>
+        <p>RBG同様、以下のツールで確認できます。自由に操作してみてください。</p>
+        <div class="hsv-experience">
+          <label for="h-hsv">H <span id="h-hsv-value">0</span></label>
+          <input type="range" class="h-hsv range-visibility" id="h-hsv" min="0" max="360" value="0" step="1" />
+          <label for="s-hsv">S <span id="s-hsv-value">0</span></label>
+          <input type="range" class="s-hsv range-visibility" id="s-hsv" min="0" max="1" value="0" step="0.01" />
+          <label for="v-hsv">V <span id="v-hsv-value">0</span></label>
+          <input type="range" class="v-hsv range-visibility" id="v-hsv" min="0" max="1" value="0" step="0.01" />
+          <div class="color-preview" id="color-preview-hsv"></div>
+        </div>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
       <!-- メイン end -->
     </div>
   </body>
   <script src="./../../scripts/util/grant_color_theme.js?ver=0.1.0" defer></script>
   <script src="./../../scripts/util/fetch_settings.js?ver=0.1.0" defer></script>
-  <script src="./../../scripts/each_pages/white/experience.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/each_pages/white/rgb.js?ver=0.1.0" defer></script>
+  <script src="./../../scripts/each_pages/white/hsv.js?ver=0.1.0" defer></script>
 </html>

@@ -13,10 +13,11 @@ h2 {
     font-family: serif;
 }
 
-div.rbg-experience {
+div.rbg-experience,
+div.hsv-experience {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
     gap: 3px;
 
     div.color-preview {
@@ -32,4 +33,61 @@ div.rbg-experience {
         align-items: center;
         padding-left: 5px;
     }
+}
+
+input.range-visibility {
+    &::-webkit-slider-thumb {
+        background-color: #fff;
+        border: solid 2px #000;
+    }
+
+    &.red::-webkit-slider-runnable-track {
+        background: linear-gradient(to right, #eee, #f00);
+    }
+    &.green::-webkit-slider-runnable-track {
+        background: linear-gradient(to right, #eee, #0f0);
+    }
+    &.blue::-webkit-slider-runnable-track {
+        background: linear-gradient(to right, #eee, #00f);
+    }
+}
+
+div.hsv-svg-wrapper {
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+svg.hsv {
+    display: inline;
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto;
+    z-index: 10;
+    box-sizing: border-box;
+    border: solid 1px var(--text-color);
+}
+
+// svgの色をカラーテーマに応じて変更
+.hsv-ls-svg-a {
+    fill: var(--background-color);
+}
+
+.hsv-ls-svg-b {
+    stroke: var(--text-color);
+}
+
+.hsv-ls-svg-c {
+    stroke: var(--text-color);
+    fill: var(--text-color);
+}
+
+.hsv-ls-svg-d {
+    fill: var(--text-color);
+}
+
+.hsv-top-svg-a {
+    fill: var(--background-color);
 }

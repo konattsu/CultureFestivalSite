@@ -46,7 +46,10 @@ form.melos-generator {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 3fr;
-  gap: 10px;
+  width: auto;
+  height: auto;
+  gap: 30px;
+  font-size: calc(1.3vw + 11px);
 }
 form.melos-generator div {
   display: grid;
@@ -56,16 +59,33 @@ form.melos-generator div label {
   text-align: left;
   align-items: center;
 }
-form.melos-generator div input.output {
-  width: auto;
-}
 form.melos-generator div.max-def {
-  grid-template-columns: 130px auto 30px;
+  grid-template-columns: auto auto 50px;
   grid-template-rows: 1fr 1fr;
 }
 form.melos-generator div.generator {
-  grid-template-columns: 50px auto 100px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 35px 50px;
+  grid-auto-flow: column;
+}
+form.melos-generator div.generator .range {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+form.melos-generator div.generator .range::-webkit-slider-thumb {
+  background-color: blue;
+}
+form.melos-generator div.generator .display {
+  width: 100%;
+  justify-content: center;
+}
+form.melos-generator .output {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: solid 2px var(--text-color);
+  font-size: medium;
+  box-sizing: border-box;
+  padding: 0 1px;
 }
 
 h3 {
