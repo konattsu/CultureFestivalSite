@@ -56,10 +56,11 @@ p {
 }
 
 .click-here {
-  color: var(--text-color);
-  font-size: 115%;
-  -webkit-text-decoration: dotted underline 3px #268bd2;
-          text-decoration: dotted underline 3px #268bd2;
+  color: #fff;
+  font-size: 105%;
+  -webkit-text-decoration: underline #fff;
+          text-decoration: underline #fff;
+  background-color: #2629d2;
 }
 
 h2 {
