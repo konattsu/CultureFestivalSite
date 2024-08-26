@@ -1,0 +1,29 @@
+h1 {
+    font-size: calc(2vw + 2rem);
+    text-align: center;
+}
+
+.svg-save-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+
+    .save-button {
+        height: 100%;
+        width: auto;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        transition: all 0.1s ease-out;
+
+        &:hover {
+            scale: 1.1;
+        }
+        &:active {
+            scale: 0.9;
+            filter: brightness(0);
+        }
+    }
+}
