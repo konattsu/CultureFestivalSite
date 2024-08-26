@@ -188,7 +188,11 @@ i {
 .white-wrapper .white-label {
   display: flex;
   align-items: center;
+  justify-self: right;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .white-wrapper .white-canvas {
   width: 100%;
@@ -204,12 +208,22 @@ i {
   justify-content: center;
   color: #000;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.white-wrapper .input-white-name {
+  padding-left: 10px;
 }
 .white-wrapper .generate-white {
-  transition: all 0.15s ease-out;
+  transition: all 0.05s ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: var(--rev-text-color);
 }
 .white-wrapper .generate-white:active {
-  scale: 0.9;
+  scale: 0.95;
   filter: brightness(0);
 }
 

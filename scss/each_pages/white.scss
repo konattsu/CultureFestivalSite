@@ -168,7 +168,9 @@ i {
     .white-label {
         display: flex;
         align-items: center;
+        justify-self: right;
         color: #fff;
+        user-select: none;
     }
 
     .white-canvas {
@@ -186,12 +188,19 @@ i {
         justify-content: center;
         color: #000;
         text-decoration: none;
+        user-select: none;
+    }
+
+    .input-white-name {
+        padding-left: 10px;
     }
 
     .generate-white {
-        transition: all 0.15s ease-out;
+        transition: all 0.05s ease-out;
+        user-select: none;
+        color: var(--rev-text-color);
         &:active {
-            scale: 0.9;
+            scale: 0.95;
             filter: brightness(0);
         }
     }
