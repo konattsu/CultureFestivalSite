@@ -17,6 +17,7 @@ h1 {
   color: #000;
   text-decoration: none;
   transition: all 0.1s ease-out;
+  font-size: x-large;
 }
 .svg-save-wrapper .save-button:hover {
   scale: 1.1;
