@@ -28,6 +28,9 @@ h2 {
   font-size: x-large;
   border: solid 3px #000;
   border-radius: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .svg-save-wrapper .save-button:hover {
   scale: 1.1;

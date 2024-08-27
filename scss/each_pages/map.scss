@@ -28,6 +28,7 @@ h2 {
         font-size: x-large;
         border: solid 3px #000;
         border-radius: 15px;
+        user-select: none;
 
         &:hover {
             scale: 1.1;
