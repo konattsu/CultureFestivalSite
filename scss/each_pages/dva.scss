@@ -11,12 +11,31 @@ h2 {
     font-family: serif;
 }
 
+.start-button {
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin: 50px auto;
+    font-size: x-large;
+    background-color: #fff;
+    color: #000;
+    border: solid 2px #000;
+    border-radius: 20px;
+
+    &:hover {
+        filter: brightness(0.6);
+        transform: scale(0.95);
+    }
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
 .vs-wrapper {
     display: grid;
     grid-template-rows: 1fr 100px 1fr;
     grid-template-columns: auto;
     background-color: #555;
-    height: 700px;
     user-select: none;
     border: solid 2px #000;
     box-sizing: border-box;

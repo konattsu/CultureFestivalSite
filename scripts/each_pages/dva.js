@@ -36,11 +36,15 @@ class Dva {
                 // 勝者
                 this._updateStatus(this.status.fighting, this.status.resulting);
                 this._applySettledEffect(document.getElementById(target.id), true);
+                // 依存ごみ, 一旦これ
+                document.body.style.overflow = "auto";
                 break;
             case this.status.dokiDokiTime:
                 // フライング
                 this._updateStatus(this.status.dokiDokiTime, this.status.resulting);
                 this._applySettledEffect(document.getElementById(target.id), false);
+                // 依存ごみ, 一旦これ
+                document.body.style.overflow = "auto";
                 break;
             default:
                 console.error(this.getCurrentStatus());
@@ -161,8 +165,10 @@ async function startButtonClickHandler() {
     switch (dva.getCurrentStatus()) {
         case dva.status.noFighting:
             startButtonContent.textContent = "リセット";
-            dvaDisplayContent.textContent = "...";
+            dvaDisplayContent.textContent = "Waiting...";
             dvaDisplayContent.scrollIntoView({ behavior: "smooth", block: "center" });
+            // 依存ごみ, 一旦これ
+            document.body.style.overflow = "hidden";
             dva.beginGame();
             await delay(2000, 10000); // TODO
             const res = dva.beginFighting();
@@ -174,6 +180,7 @@ async function startButtonClickHandler() {
         case dva.status.resulting:
         case dva.status.fighting:
         case dva.status.dokiDokiTime:
+            document.body.style.overflow = "auto";
             startButtonContent.textContent = "開始";
             dva.reset();
             dvaDisplayContent.textContent = "...";
@@ -214,3 +221,5 @@ const dva = new Dva(player1, player2, vsWrapper);
 startButton.addEventListener("click", () => {
     startButtonClickHandler();
 });
+
+upArrow.removeEventListener("click", moveTopHandler);
