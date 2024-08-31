@@ -11,6 +11,14 @@ h2 {
   font-family: serif;
 }
 
+h3 {
+  font-size: min(1vw + 1rem, 25px);
+  max-width: 50%;
+  border-left: solid #859900 5px;
+  margin: 3rem 0 1rem 0;
+  padding: 5px;
+}
+
 .svg-save-wrapper {
   margin: 50px 0 100px 0;
   display: flex;
