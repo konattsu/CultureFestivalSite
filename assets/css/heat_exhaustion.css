@@ -1,0 +1,12 @@
+h1 {
+  font-size: calc(2vw + 2rem);
+  text-align: center;
+}
+
+h2 {
+  font-size: min(1.5vw + 1.3rem, 45px);
+  padding: 9px;
+  margin: 4rem 0 2rem 0;
+  max-width: 100%;
+  font-family: serif;
+}/*# sourceMappingURL=heat_exhaustion.css.map */

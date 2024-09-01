@@ -140,6 +140,37 @@
         <ellipse class="gacha-svg-b" cx="50" cy="75" rx="3" ry="5" stroke="none" />
       </symbol>
       <!-- gacha end -->
+      <!-- 温度計 begin -->
+      <symbol id="thermometer-svg-src" viewBox="0 0 100 100">
+        <!-- メインのやつ -->
+        <circle cx="50" cy="75" r="15" fill="#fff" stroke="#000" stroke-width="2px" />
+        <path d="M40 64 l0 -50 q10 -10, 20 0 l0 50" stroke="#000" stroke-width="2px" fill="#fff" />
+        <path d="M45 75 l0 -55 q5 -5, 10 0 l0 55" stroke="none" fill="#f00" />
+        <circle cx="50" cy="75" r="10" fill="#f00" />
+        <!-- 目盛り -->
+        <line class="thermometer-svg-a" x1="65" y1="20" x2="80" y2="20" stroke-width="2px" />
+        <line class="thermometer-svg-a" x1="65" y1="40" x2="80" y2="40" stroke-width="2px" />
+        <line class="thermometer-svg-a" x1="65" y1="60" x2="80" y2="60" stroke-width="2px" />
+        <line class="thermometer-svg-a" x1="65" y1="24" x2="72" y2="24" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="28" x2="72" y2="28" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="32" x2="72" y2="32" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="36" x2="72" y2="36" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="44" x2="72" y2="44" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="48" x2="72" y2="48" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="52" x2="72" y2="52" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="65" y1="56" x2="72" y2="56" stroke-width="1px" />
+        <!-- 太陽 -->
+        <circle class="thermometer-svg-b" cx="20" cy="30" r="5" />
+        <line class="thermometer-svg-a" x1="28" y1="30" x2="35" y2="30" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="12" y1="30" x2="5" y2="30" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="20" y1="38" x2="20" y2="45" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="20" y1="22" x2="20" y2="15" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="15" y1="25" x2="10" y2="20" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="15" y1="35" x2="10" y2="40" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="25" y1="35" x2="30" y2="40" stroke-width="1px" />
+        <line class="thermometer-svg-a" x1="25" y1="25" x2="30" y2="20" stroke-width="1px" />
+      </symbol>
+      <!-- 温度計 end -->
     </svg>
     <!-- svg並べ end -->
 
@@ -200,6 +231,15 @@
                 <use href="#club-logo-svg-src"></use>
               </svg>
               <span class="content-text">部誌</span>
+            </a>
+          </div>
+
+          <div class="content">
+            <a href="https://math-club.net/pages/contents/heat-exhaustion.html">
+              <svg class="content-svg">
+                <use href="#thermometer-svg-src"></use>
+              </svg>
+              <span class="content-text">熱中症に注意</span>
             </a>
           </div>
 

@@ -108,4 +108,12 @@ h1 {
 
 .gacha-svg-b {
   fill: var(--text-color);
+}
+
+.thermometer-svg-a {
+  stroke: var(--text-color);
+}
+
+.thermometer-svg-b {
+  fill: var(--text-color);
 }/*# sourceMappingURL=contents.css.map */
