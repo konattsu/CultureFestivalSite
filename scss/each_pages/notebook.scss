@@ -5,9 +5,15 @@ h1 {
     text-align: center;
 }
 
+html,
+body {
+    width: 100%;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .title-list-title {
@@ -16,8 +22,9 @@ h1 {
 
 .title-list {
     margin-top: 0;
+    font-size: larger;
     li {
-        padding: 5px 0;
+        padding: 8px 0;
         a {
             text-decoration: none;
             color: var(--text-color);
@@ -71,6 +78,7 @@ p {
 
 // ここからそれぞれの部誌固有のscss
 // prefixは統一すること
+// 適当に付与したいときはprefix + suffix + [char]
 
 // 三角比
 .content-t-r-ul > li {
@@ -83,8 +91,9 @@ p {
     display: block;
     width: 90%;
     margin: 0 auto;
+    padding: 0 5px;
 }
-.content-hp-wrapper > table {
+.content-hp-musical-scale-wrapper > table {
     --border-color: var(--text-color);
     width: 100%;
     max-width: 400px;
@@ -107,5 +116,37 @@ p {
         td {
             text-align: center;
         }
+        * {
+            font-weight: normal;
+        }
     }
+}
+
+.content-hp-chord-wrapper {
+    --border-color: var(--text-color);
+    overflow-x: auto;
+    width: 100%;
+    max-width: 550px;
+    font-size: larger;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        white-space: nowrap;
+        border: solid 1px var(--border-color);
+        margin: 15px 0;
+    }
+    tr th,
+    tr td {
+        padding: 3px 13px;
+    }
+    thead,
+    tbody {
+        * {
+            text-align: center;
+        }
+    }
+}
+
+.content-hp-a {
+    border-left: solid 0.1px var(--text-color);
 }
