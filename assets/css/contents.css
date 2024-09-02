@@ -116,4 +116,8 @@ h1 {
 
 .thermometer-svg-b {
   fill: var(--text-color);
+}
+
+.hello-world-svg-a {
+  stroke: var(--text-color);
 }/*# sourceMappingURL=contents.css.map */
