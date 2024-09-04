@@ -32,14 +32,19 @@ h1 {
 .contents-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  border-top: solid 0.01px #d33682;
-  border-bottom: solid 0.01px #d33682;
+  border-top: solid 1px #d33682;
+  border-bottom: solid 1px #d33682;
   margin: 0.1rem;
 }
 
 .content {
   border: solid 2px #268bd2;
-  margin: 1rem;
+  margin: 15px 0;
+}
+@media (min-width: 500px) {
+  .content {
+    margin: 1rem;
+  }
 }
 
 .content a {
