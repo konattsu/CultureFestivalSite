@@ -10,3 +10,13 @@ h2 {
     max-width: 100%;
     font-family: serif;
 }
+
+ol {
+    font-size: calc(1rem + 0.35vw);
+    line-height: calc(1.5rem + 1.3vw);
+    padding: auto 10px;
+    li {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
