@@ -162,4 +162,10 @@ p {
 
 .content-hp-a {
   border-left: solid 0.1px var(--text-color);
+}
+
+.content-center {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
 }/*# sourceMappingURL=notebook.css.map */
