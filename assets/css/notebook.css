@@ -99,6 +99,12 @@ p {
   font-size: 70%;
 }
 
+.content-center {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+
 .content-t-r-ul > li {
   font-size: calc(1rem + 0.35vw);
   line-height: calc(1.5rem + 1vw);
@@ -164,8 +170,9 @@ p {
   border-left: solid 0.1px var(--text-color);
 }
 
-.content-center {
-  text-align: center;
-  font-size: 120%;
-  font-weight: bold;
+.content-sg-a {
+  display: block;
+  border-left: solid 0.1px var(--text-color);
+  margin-left: 7px;
+  padding-left: 3px;
 }/*# sourceMappingURL=notebook.css.map */

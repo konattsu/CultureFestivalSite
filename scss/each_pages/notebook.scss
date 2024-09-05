@@ -76,6 +76,12 @@ p {
     font-size: 70%;
 }
 
+.content-center {
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+}
+
 // ここからそれぞれの部誌固有のscss
 // prefixは統一すること
 // 適当に付与したいときはprefix + suffix + [char]
@@ -149,8 +155,10 @@ p {
     border-left: solid 0.1px var(--text-color);
 }
 
-.content-center {
-    text-align: center;
-    font-size: 120%;
-    font-weight: bold;
+// 平面, 点 3つのやつ
+.content-sg-a {
+    display: block;
+    border-left: solid 0.1px var(--text-color);
+    margin-left: 7px;
+    padding-left: 3px;
 }
