@@ -42,14 +42,6 @@ h2 {
   width: 100%;
   height: 100%;
 }
-.title-and-formulas-wrapper:active {
-  transition: transform 4.5s;
-  transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
-  border: solid 1px #cb4b16;
-}
-.title-and-formulas-wrapper:active .math-formulas {
-  filter: none;
-}
 
 :has(.math-formulas-wrapper:active) {
   -webkit-user-select: none;
