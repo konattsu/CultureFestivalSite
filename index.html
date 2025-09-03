@@ -1,122 +1,12 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ホーム | 数学部</title>
-    <link rel="stylesheet" href="./assets/css/main.css?ver=0.1.0" class="css" />
-    <link rel="stylesheet" href="./assets/css/header.css?ver=0.1.0" class="css" />
-    <link rel="stylesheet" href="./assets/css/move_top.css?ver=0.1.0" class="css" />
-    <link rel="stylesheet" href="./assets/css/md.css?ver=0.1.0" class="css" />
-    <link rel="stylesheet" href="./assets/css/home.css?ver=0.1.0" class="css" />
-    <link rel="stylesheet" href="./assets/css/math_logo.css?ver=0.1.0" class="css" />
-    <script src="./scripts/util/store_settings.js?ver=0.1.0"></script>
+    <title>React + Vite + Tailwind</title>
   </head>
-
-  <body class="body non-up-arrow" id="body">
-    <div class="all-wrapper">
-      <!-- ヘッダー begin -->
-      <div class="overlay" id="overlay"></div>
-      <header class="header show" id="header">
-        <button class="burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="menu" id="menu">
-          <ul class="nav-list">
-            <li><a href="https://math-club.net">ホーム</a></li>
-            <li>
-              <a href="https://math-club.net/pages/contents.html">コンテンツ</a>
-            </li>
-            <li><a href="https://math-club.net/pages/map.html">地図</a></li>
-            <li>
-              <button class="settings-button" id="settings-button">more</button>
-            </li>
-            <ul class="change-settings" id="change-settings">
-              <button class="toggle-theme settings" id="toggle-theme">theme</button>
-              <button class="toggle-hand settings" id="toggle-hand">mirror</button>
-              <button class="toggle-up-arrow settings" id="toggle-up-arrow">upArrow</button>
-              <button class="copy-current-url settings" id="copy-current-url">copyUrl</button>
-            </ul>
-          </ul>
-        </nav>
-        <script src="./scripts/util/hamburger.js" defer></script>
-      </header>
-      <!-- ヘッダー end -->
-
-      <!-- topに戻る begin -->
-      <script src="./../scripts/util/fetch_svg.js" defer></script>
-      <div class="svg"></div>
-      <svg class="up-arrow" id="up-arrow">
-        <use href="#up-arrow-svg-src"></use>
-      </svg>
-      <script src="./../scripts/util/move_top.js" defer></script>
-      <!-- topに戻る end -->
-
-      <!-- メイン begin -->
-      <div class="main-content">
-        <div class="title-and-formulas-wrapper">
-          <h1>数学部</h1>
-          <svg class="math-formulas">
-            <use href="#mathematical-formulas-svg-src"></use>
-          </svg>
-        </div>
-
-        <h2>このサイトについて</h2>
-        <p>
-          数学部`文化祭特設`公式サイトです。主に数学、プログラミング関連の内容を記載しております。是非ご堪能ください！
-        </p>
-        <p>
-          <span class="md-warning">不特定多数へのサイトの共有はご控え頂きますようお願いします。</span>
-        </p>
-        <h2>コンテンツ一覧</h2>
-        <p>
-          数学部員が作成した部誌、ブラウザ上で遊べるミニゲームなどがあります。<a
-            class="click-here"
-            href="https://math-club.net/pages/contents.html"
-            >こちらのページ</a
-          >に掲載しています。パンフレット記載の暗号解読もこのページです。
-        </p>
-
-        <h2>数学部の展示</h2>
-        <p>
-          数学部は<span class="md-emphasis">4階 407室</span
-          >にて展示をしています。例年通りパズルなどを設置しています。また今年度は、数学に関する動画を冷房の効いた涼しい室内で視聴できます。座席数を30席以上と多く用意しておりますので、是非お越しください。
-        </p>
-        <p>その他ご不明な点がございましたら、お気軽にお申し付けください。</p>
-        <h2>投票について</h2>
-        <p>
-          自由生徒会が主催する文化祭人気投票が開催されています。学校全体で展示されている内容を「屋外展示クラス」「部活動展示」など、4つの部門に分けて投票が行われます。
-        </p>
-        <p>投票の方法として、ご自身の端末を用いてインターネットで行うか、紙に記述する2つ種類があります。</p>
-        <p>
-          1つ目の方法は投票ページに移動していただく必要があります。投票ページには、パンフレットに記載のQRコードを読み取るか、<a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeEGg1_-mDCMJqLvj65Te-XWRjtrOczmVfohp6H5UcW-cmAtA/viewform"
-            target="_blank"
-            class="click-here"
-            >こちらのリンク</a
-          >をクリックしてアクセスできます。 <br />※上記リンクは外部サイトへのリンクとなりますので、ご注意ください。
-        </p>
-        <p>
-          2つ目の方法は投票場所まで移動していただく必要があります。階段付近に投票箱が設置されています。場所についての詳細な情報はパンフレットを参照してください。
-        </p>
-        <h2>免責事項</h2>
-        <p>
-          当サイトをご利用の際には、下記の免責事項を必ずお読みください。当サイトのコンテンツを利用された際には、本免責事項の内容をご承諾いただいたものとみなしますので、ご了承ください。
-        </p>
-        <p>
-          1.情報の正確性について<br />
-          当サイトは、提供する情報が正確かつ最新であるよう努めていますが、その正確性や完全性について一切の保証をするものではありません。ユーザーが当サイトの情報を基に行動を起こした結果生じた損害について、当サイトは一切の責任を負いかねます。
-          <br /><br />2.著作権等について<br />
-          当サイトに掲載されている画像、文章、デザイン、その他のコンテンツに関する著作権は、特に明記されている場合を除き、当サイトまたはその権利所有者に帰属します。これらのコンテンツの無断利用、複製、転載、配布を固く禁止します。ただし、特定のページやコンテンツにおいて、利用や転載、配布が許可されている場合は、その限りではありません。許可された場合は、該当ページにてその旨を明記しております。
-          <br /><br />3.リンクについて<br />
-          当サイトには、第三者が運営・管理している外部サイトへのリンクが含まれております。しかし、当サイトを離れ、外部サイトへのリンクをたどられた場合、当サイトでは他のサイトに掲載されている情報に関して、一切の責任を負うものではありませんので予めご了承ください。
-        </p>
-      </div>
-      <!-- メイン end -->
-    </div>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-  <script src="./scripts/util/grant_color_theme.js" defer></script>
-  <script src="./scripts/util/fetch_settings.js" defer></script>
 </html>
