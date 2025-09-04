@@ -13,7 +13,7 @@ services:
     volumes:
       - ~/CultureFestivalSite:/workspaces:cached
       - ~/.npm:/home/node/.npm:cached
-      - ${SSH_AUTH_SOCK}:/ssh-agent
+      - ${SSH_AUTH_SOCK:-/dev/null}:/ssh-agent
 
     environment:
       SSH_AUTH_SOCK: /ssh-agent
